@@ -10,7 +10,7 @@
 
 	<artifactId>lexml-xml-schemas</artifactId>
 	<packaging>jar</packaging>
-	<version>3.1.2</version>
+	<version>3.1.3-SNAPSHOT</version>
 	<properties>
 	</properties>
 
@@ -18,7 +18,7 @@
 		<url>https://github.com/lexml/${project.artifactId}</url>
 		<developerConnection>scm:git:https://github.com/lexml/${project.artifactId}.git</developerConnection>
 		<connection>scm:git:https://github.com/lexml/${project.artifactId}.git</connection>
-		<tag>lexml-xml-schemas-3.1.2</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<build>
