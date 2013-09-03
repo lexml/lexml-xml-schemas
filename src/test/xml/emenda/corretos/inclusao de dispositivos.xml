@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmendaProposicao xmlns="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0 ../xsd/lexml-emenda-proposicao.xsd">
+  <MetadadoEmenda>
+    <Propriedades>
+      <Descricao></Descricao>
+      <Elaborador>fragomeni</Elaborador>
+      <Concluida>0</Concluida>
+      <Observacao></Observacao>
+      <Situacao>Emenda Inválida</Situacao>
+    </Propriedades>
+  </MetadadoEmenda>
+  <Emenda id='emd'>
+    <Proposicao URN='urn:lex:br:congresso.nacional:medida.provisoria:2005-04-04;244:@200504040101'>MPV 244/2005</Proposicao>
+    <Marcadores>
+      <DispositivosImportados></DispositivosImportados>
+      <DispositivosSuprimidos></DispositivosSuprimidos>
+      <DispositivosModificados></DispositivosModificados>
+      <DispositivosAdicionados>
+        <Adicao id='adi1' parteProposicao='Texto' refidIrmao="art1" posicaoAdicao="posterior">
+          <Artigo id="art1-A">
+            <Rotulo>Art. 1º-A</Rotulo>
+          </Artigo>
+        </Adicao>
+        <Adicao id='adi2' parteProposicao='Texto' refidPai="art1-A">
+          <Caput id="art1-A_cpt">
+            <p> Novo artigo </p>
+          </Caput>
+        </Adicao>
+        <Adicao id='adi3' parteProposicao='Texto' refidPai="art1-A_cpt">
+          <Inciso id="art1-A_cpt_inc1">
+            <Rotulo>I -</Rotulo>
+            <p> Novo inciso </p>
+          </Inciso>
+        </Adicao>
+        <Adicao id='adi4' parteProposicao='Texto' refidIrmao="art1-A_cpt" posicaoAdicao="posterior">
+          <Paragrafo id="art1-A_par1">
+            <Rotulo>Parágrafo Único</Rotulo>
+            <p> Novo par&#225;grafo </p>
+          </Paragrafo>
+        </Adicao>
+        <Adicao id='adi5' parteProposicao='Texto' refidPai="art1-A_cpt_inc1">
+          <Alinea id="art1-A_cpt_inc1_ali1">
+            <Rotulo>1</Rotulo>
+            <p> Nova al&#237;nea </p>
+          </Alinea>
+        </Adicao>
+        <Adicao id='adi6' parteProposicao='Texto' refidPai="art1-A_cpt_inc1_ali1">
+          <Item id="art1-A_cpt_inc1_ali1_ite1">
+            <Rotulo>1.</Rotulo>
+            <p> Novo item </p>
+          </Item>
+        </Adicao>
+      </DispositivosAdicionados>
+    </Marcadores>
+    <Justificativa id='emd1_jus'></Justificativa>
+    <ComandoEmenda id="emd_cmd1" tipoComando="complexo" acaoComando="adicao">
+      <p>Acrescente-se ao CAPÍTULO 1 o seguinte artigo:</p>
+      <Citacao>
+        <Aspas>
+          <Artigo refid='adi1'>
+            <Caput refid='adi2'>
+              <Inciso refid='adi3'>
+                <Alinea refid='adi5'>
+                  <Item refid='adi6'></Item>
+                </Alinea>
+              </Inciso>
+            </Caput>
+            <Paragrafo refid='adi4'></Paragrafo>
+          </Artigo>
+        </Aspas>
+      </Citacao>
+    </ComandoEmenda>
+  </Emenda>
+</EmendaProposicao>

@@ -1,0 +1,66 @@
+<LexML xsi:schemaLocation="http://www.lexml.gov.br/1.0 ../xsd/lexml-br-rigido.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.lexml.gov.br/1.0">
+			<Metadado>
+                <Identificacao URN="urn:lex:br:senado.federal:projeto.lei;pls:2010-01-01;238"/>
+            </Metadado>
+			<ProjetoNorma>
+				<Norma>
+				<ParteInicial>
+            <Epigrafe id="epigrafe">PROJETO DE LEI DO SENADO FEDERAL Nº 238 DE 1 DE JANEIRO DE 2010</Epigrafe>
+            <Ementa id="ementa">Altera a Medida Provisória nº 2.199-14, de 24 de agosto de 2001, que <i>altera a legislação do imposto sobre a renda no que se refere aos incentivos fiscais de isenção e de redução, define diretrizes para os incentivos fiscais de aplicação de parcela do imposto sobre a renda nos Fundos de Investimentos Regionais, e dá outras providências</i>, para prorrogar, até 31 de dezembro de 2033, os prazos previstos nos arts. 1º e 3º.</Ementa>
+            <Preambulo id="preambulo"><p>O CONGRESSO NACIONAL decreta:</p></Preambulo>
+        </ParteInicial>
+				<Articulacao><Artigo id="art1">
+						<Rotulo>Art. 1º</Rotulo>
+
+						<Caput id="art1_cpt">
+
+						<p>O art. 1º da Medida Provisória nº 2.199-14, de 24 de agosto de 2001, passa a vigorar com a seguinte redação:</p>
+
+
+<Alteracao id="art1_cpt_alt1" xml:base="urn:lex:br:federal:medida.provisoria:2001-08-24;2199-14">
+<Artigo id="art1_cpt_alt1_art1" abreAspas="s">
+<Rotulo>Art. 1º</Rotulo>
+
+<Caput id="art1_cpt_alt1_art1_cpt">
+<p>Sem prejuízo das demais normas em vigor aplicáveis à matéria, a partir do ano-calendário de 2000, as pessoas jurídicas que tenham projeto protocolizado e aprovado até 31 de dezembro de 2033 para instalação, ampliação, modernização ou diversificação enquadrado em setores da economia considerados, em ato do Poder Executivo, prioritários para o desenvolvimento regional, nas áreas de atuação da Superintendência de Desenvolvimento do Nordeste - Sudene e da Superintendência de Desenvolvimento da Amazônia - Sudam, terão direito à redução de 75% (setenta e cinco por cento) do imposto sobre a renda e adicionais, calculados com base no lucro da exploração.</p>
+<Omissis id="art1_cpt_alt1_art1_cpt_omi1"></Omissis>
+<Inciso id="art1_cpt_alt1_art1_cpt_inc3"><Rotulo>III - </Rotulo><p>Nono nonono nonono</p></Inciso>
+</Caput>
+</Artigo>
+<Omissis id="art1_cpt_alt1_omi1" fechaAspas="s" notaAlteracao="NR"></Omissis>
+<!--
+<Omissis id="art1_cpt_alt1_omi1" fechaAspas="s" notaAlteracao="NR"></Omissis>
+-->
+</Alteracao>
+
+					</Caput>
+					</Artigo><Artigo id="art2">
+						<Rotulo>Art. 2º</Rotulo>
+
+						<Caput id="art2_cpt">
+
+						<p>O art. 3º da Medida Provisória nº 2.199-14, de 24 de agosto de 2001, passa a vigorar com a seguinte redação:</p>
+						<Alteracao id="art2_cpt_alt1" xml:base="urn:lex:br:federal:medida.provisoria:2001-08-24;2199-14">
+					<Artigo fechaAspas="s" id="art2_cpt_alt1_art3" abreAspas="s" notaAlteracao="NR">
+						<Rotulo>Art. 3º</Rotulo>
+
+						<Caput id="art2_cpt_alt1_art3_cpt">
+
+						<p>Sem prejuízo das demais normas em vigor sobre a matéria, fica mantido, até 31 de dezembro de 2033, o percentual de trinta por cento previsto no inciso I do art. 2º da Lei nº 9.532, de 1997, para aqueles empreendimentos dos setores da economia que venham a ser considerados, em ato do Poder Executivo, prioritários para o desenvolvimento regional.</p>
+
+					</Caput>
+					</Artigo>
+				</Alteracao>
+					</Caput>
+					</Artigo><Artigo id="art3">
+						<Rotulo>Art. 3º</Rotulo>
+
+						<Caput id="art3_cpt">
+
+						<p>Esta Lei entra em vigor na data de sua publicação.</p>
+
+					</Caput>
+					</Artigo></Articulacao>
+				</Norma>
+			</ProjetoNorma>
+		</LexML>

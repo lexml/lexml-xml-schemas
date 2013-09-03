@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmendaProposicao xmlns="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0 ../xsd/lexml-emenda-proposicao.xsd">
+  <MetadadoEmenda>
+    <Propriedades>
+      <Descricao></Descricao>
+      <Elaborador>jholanda</Elaborador>
+      <Concluida>0</Concluida>
+      <Observacao></Observacao>
+      <Situacao>Emenda Inválida</Situacao>
+    </Propriedades>
+  </MetadadoEmenda>
+  <Emenda id='emd'>
+    <Proposicao URN='urn:lex:br:congresso.nacional:medida.provisoria:2005-04-04;244:@200504040101'>MPV 244/2005</Proposicao>
+    <Marcadores>
+      <DispositivosImportados></DispositivosImportados>
+      <DispositivosSuprimidos></DispositivosSuprimidos>
+      <DispositivosModificados></DispositivosModificados>
+      <DispositivosAdicionados>
+        <Adicao id='adi1' parteProposicao='Texto' refidIrmao="art1" posicaoAdicao="posterior">
+          <Artigo id="art1-A">
+            <Rotulo>Art. 1º-A</Rotulo>
+          </Artigo>
+        </Adicao>
+        <Adicao id='adi2' parteProposicao='Texto' refidPai="art1-A">
+          <Caput id="art1-A_cpt">
+              <p> dfdfd </p>
+          </Caput>
+        </Adicao>
+        <Adicao id='adi3' parteProposicao='Texto' refidPai="art1-A_cpt">
+          <Inciso id="art1-A_cpt_inc1">
+            <Rotulo>I -</Rotulo>
+              <p> dsadsadas </p>
+          </Inciso>
+        </Adicao>
+        <Adicao id='adi4' parteProposicao='Texto' refidPai="art1-A_cpt_inc1">
+          <Alinea id="art1-A_cpt_inc1_ali1">
+            <Rotulo>a)</Rotulo>
+              <p> sadsasad </p>
+          </Alinea>
+        </Adicao>
+        <Adicao id='adi5' parteProposicao='Texto' refidIrmao="art1-A_cpt_inc1" posicaoAdicao="posterior">
+          <Inciso id="art1-A_cpt_inc2">
+            <Rotulo>II -</Rotulo>
+              <p> dsadsadsa </p>
+          </Inciso>
+        </Adicao>
+      </DispositivosAdicionados>
+    </Marcadores>
+    <Justificativa id='emd1_jus'></Justificativa>
+    <ComandoEmenda id="emd_cmd1" tipoComando="complexo" acaoComando="adicao">
+        <p>Acrescente-se após o Art. 1º o seguinte artigo:</p>
+        <Citacao>
+          <Aspas>
+            <Artigo refid='adi1'>
+              <Caput refid='adi2'>
+                <Inciso refid='adi3'>
+                  <Alinea refid='adi4'></Alinea>
+                </Inciso>
+                <Inciso refid='adi5'></Inciso>
+              </Caput>
+            </Artigo>
+          </Aspas>
+        </Citacao>
+    </ComandoEmenda>
+  </Emenda>
+</EmendaProposicao>

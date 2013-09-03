@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmendaProposicao xmlns="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0 ../xsd/lexml-emenda-proposicao.xsd">
+  <MetadadoEmenda>
+    <Propriedades>
+      <Descricao></Descricao>
+      <Elaborador>jholanda</Elaborador>
+      <Concluida>0</Concluida>
+      <Observacao></Observacao>
+      <Situacao>Emenda Inválida</Situacao>
+    </Propriedades>
+  </MetadadoEmenda>
+  <Emenda id='emd'>
+    <Proposicao URN='urn:lex:br:congresso.nacional:medida.provisoria:2005-04-04;244:@200504040101'>MPV 244/2005</Proposicao>
+    <Marcadores>
+      <DispositivosImportados></DispositivosImportados>
+      <DispositivosSuprimidos>
+        <Supressao id='sup1' parteProposicao='Texto'>
+          <Artigo id='art1'>
+            <Rotulo>Art. 1º</Rotulo>
+          </Artigo>
+        </Supressao>
+        <Supressao id='sup2' parteProposicao='Texto'>
+          <Inciso id='art2_cpt_inc4'>
+            <Rotulo>IV -</Rotulo>
+          </Inciso>
+        </Supressao>
+        <Supressao id='sup3' parteProposicao='Texto'>
+          <Inciso id='art2_cpt_inc5'>
+            <Rotulo>V -</Rotulo>
+          </Inciso>
+        </Supressao>
+        <Supressao id='sup4' parteProposicao='Texto'>
+          <Inciso id='art2_cpt_inc11'>
+            <Rotulo>XI -</Rotulo>
+          </Inciso>
+        </Supressao>
+        <Supressao id='sup5' parteProposicao='Texto'>
+          <Artigo id='art3'>
+            <Rotulo>Art. 3º</Rotulo>
+          </Artigo>
+        </Supressao>
+      </DispositivosSuprimidos>
+      <DispositivosModificados></DispositivosModificados>
+      <DispositivosAdicionados></DispositivosAdicionados>
+    </Marcadores>
+    <Justificativa id='emd1_jus'>
+    </Justificativa>
+    <ComandoEmenda id="emd_cmd1" tipoComando="artigoTodo" acaoComando="supressao" refIdsSupressao="sup1 sup3 sup5">
+        <p>Suprimam-se o Art. 1º, os incisos IV, V e XI do caput do Art. 2º e o Art. 3º</p>
+    </ComandoEmenda>
+  </Emenda>
+</EmendaProposicao>

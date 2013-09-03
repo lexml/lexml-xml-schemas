@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema targetNamespace="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0" xmlns="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  elementFormDefault="qualified">
+
+  <xsd:redefine schemaLocation="lexml-base.xsd" />
+
+  <xsd:element name="EmendaProposicao">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="MetadadoEmenda"></xsd:element>
+        <xsd:element ref="Emenda"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="MetadadoEmenda">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Propriedades"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Emenda">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Proposicao">
+          <xsd:complexType>
+            <xsd:simpleContent>
+              <xsd:extension base="xsd:string">
+                <xsd:attribute name="URN" type="xsd:anyURI" />
+              </xsd:extension>
+            </xsd:simpleContent>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element ref="Marcadores" />
+        <xsd:element ref="Justificativa" />
+        <xsd:element ref="ComandoEmenda" minOccurs="0" maxOccurs="1" />
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:ID"></xsd:attribute>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Propriedades">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Descricao" type="xsd:string"></xsd:element>
+        <xsd:element name="Elaborador" type="xsd:string"></xsd:element>
+        <xsd:element name="Concluida" type="xsd:string"></xsd:element>
+        <xsd:element name="Observacao" type="xsd:string"></xsd:element>
+        <xsd:element name="Situacao" type="xsd:string"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="URN">
+    <xsd:complexType>
+      <xsd:attribute name="href" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Marcadores">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="DispositivosImportados"></xsd:element>
+        <xsd:element ref="DispositivosSuprimidos"></xsd:element>
+        <xsd:element ref="DispositivosModificados"></xsd:element>
+        <xsd:element ref="DispositivosAdicionados"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Justificativa">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:ID"></xsd:attribute>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="DispositivosImportados" type="xsd:string"></xsd:element>
+
+  <xsd:element name="DispositivosSuprimidos">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Supressao" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="DispositivosModificados">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Modificacao" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="DispositivosAdicionados">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Adicao" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Supressao">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:group ref="Dispositivos" />
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:ID" />
+      <xsd:attribute name="parteProposicao" type="xsd:string" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Modificacao">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element ref="Ementa" />
+        <xsd:element ref="Preambulo" />
+        <xsd:group ref="Dispositivos" />
+      </xsd:choice>
+      <xsd:attribute name="id" type="xsd:ID" />
+      <xsd:attribute name="parteProposicao" type="xsd:string" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Adicao">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:group ref="Dispositivos" />
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:ID" />
+      <xsd:attribute name="parteProposicao" type="xsd:string" />
+      <xsd:attribute name="refidPai" type="xsd:string" use="optional" />
+      <xsd:attribute name="refidIrmao" type="xsd:string" use="optional" />
+      <xsd:attribute name="posicaoAdicao" type="PosicaoAdicaoType" use="optional" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- Dispositivos -->
+
+  <xsd:group name="Dispositivos">
+    <xsd:choice>
+      <xsd:element ref="Parte" />
+      <xsd:element ref="Livro" />
+      <xsd:element ref="Titulo" />
+      <xsd:element ref="Capitulo" />
+      <xsd:element ref="Secao" />
+      <xsd:element ref="Subsecao" />
+      <xsd:element ref="Artigo" />
+      <xsd:element ref="Caput" />
+      <xsd:element ref="Paragrafo" />
+      <xsd:element ref="Inciso" />
+      <xsd:element ref="Alinea" />
+      <xsd:element ref="Item" />
+    </xsd:choice>
+  </xsd:group>
+
+  <xsd:complexType name="AgrupadorType">
+    <xsd:sequence>
+      <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+      <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:ID" />
+  </xsd:complexType>
+
+  <xsd:element name="Parte" type="AgrupadorType" />
+
+  <xsd:element name="Livro" type="AgrupadorType" />
+
+  <xsd:element name="Titulo" type="AgrupadorType" />
+
+  <xsd:element name="Capitulo" type="AgrupadorType" />
+
+  <xsd:element name="Secao" type="AgrupadorType" />
+
+  <xsd:element name="Subsecao" type="AgrupadorType" />
+
+  <xsd:element name="Artigo">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+        <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+        <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+        <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:ID" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Caput">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+        <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:ID" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="OutrosDispositivosType">
+    <xsd:sequence>
+      <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+      <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+      <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+      <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:ID" />
+  </xsd:complexType>
+
+  <xsd:element name="Paragrafo" type="OutrosDispositivosType" />
+
+  <xsd:element name="Inciso" type="OutrosDispositivosType" />
+
+  <xsd:element name="Alinea" type="OutrosDispositivosType" />
+
+  <xsd:element name="Item" type="OutrosDispositivosType" />
+
+  <!-- Comando de emenda -->
+
+  <xsd:element name="ComandoEmenda">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="p" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="Citacao" type="CitacaoCEType" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:ID" />
+      <xsd:attribute name="tipoComando" type="TipoComandoType" />
+      <xsd:attribute name="acaoComando" type="AcaoComandoType" />
+      <xsd:attribute name="refIdsSupressao" type="xsd:IDREFS" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="CitacaoCEType" mixed="true">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:group ref="HierCitacaoCEType" />
+        <xsd:element name="Aspas">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:group ref="HierCitacaoCEType" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:group name="HierCitacaoCEType">
+    <xsd:choice>
+      <xsd:choice>
+        <xsd:element name="Artigo" type="ArtigoCEType" />
+        <xsd:element name="Caput" type="CaputCEType" />
+        <xsd:element name="Paragrafo" type="ParagrafoCEType" />
+        <xsd:element name="Inciso" type="IncisoCEType" />
+        <xsd:element name="Alinea" type="AlineaCEType" />
+        <xsd:element name="Item" type="ItemCEType" />
+      </xsd:choice>
+    </xsd:choice>
+  </xsd:group>
+
+  <xsd:complexType name="ArtigoCEType">
+    <xsd:sequence>
+      <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+      <xsd:element name="Caput" type="CaputCEType" minOccurs="0" maxOccurs="1" />
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element name="Paragrafo" type="ParagrafoCEType" />
+        <xsd:element name="Omissis" type="OmissisCEType" />
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="refid" type="xsd:IDREF" use="optional" />
+  </xsd:complexType>
+
+  <xsd:complexType name="CaputCEType">
+    <xsd:sequence>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element name="Inciso" type="IncisoCEType" />
+        <xsd:element name="Omissis" type="OmissisCEType" />
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="refid" type="xsd:IDREF" use="optional" />
+  </xsd:complexType>
+
+  <xsd:complexType name="ParagrafoCEType">
+    <xsd:sequence>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element name="Inciso" type="IncisoCEType" />
+        <xsd:element name="Omissis" type="OmissisCEType" />
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="refid" type="xsd:IDREF" use="optional" />
+  </xsd:complexType>
+
+  <xsd:complexType name="IncisoCEType">
+    <xsd:sequence>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element name="Alinea" type="AlineaCEType" />
+        <xsd:element name="Omissis" type="OmissisCEType" />
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="refid" type="xsd:IDREF" use="optional" />
+  </xsd:complexType>
+
+  <xsd:complexType name="AlineaCEType">
+    <xsd:sequence>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element name="Item" type="ItemCEType" />
+        <xsd:element name="Omissis" type="OmissisCEType" />
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="refid" type="xsd:IDREF" use="optional" />
+  </xsd:complexType>
+
+  <xsd:complexType name="ItemCEType">
+    <xsd:attribute name="refid" type="xsd:IDREF" use="optional" />
+  </xsd:complexType>
+
+  <xsd:complexType name="OmissisCEType">
+    <xsd:sequence>
+      <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- Enumerações -->
+
+  <xsd:simpleType name="TipoComandoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="agrupador" />
+      <xsd:enumeration value="simples" />
+      <xsd:enumeration value="complexo" />
+      <xsd:enumeration value="artigoTodo" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="AcaoComandoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="adicao" />
+      <xsd:enumeration value="supressao" />
+      <xsd:enumeration value="alteracao" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="PosicaoAdicaoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="anterior" />
+      <xsd:enumeration value="posterior" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>

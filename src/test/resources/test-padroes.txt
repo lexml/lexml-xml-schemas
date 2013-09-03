@@ -1,0 +1,7 @@
+^lexml/errados/.*,RIGIDO,false,true,false
+^lexml/rigido/.*,RIGIDO,false,false,false
+^lexml/flexivel/.*,FLEXIVEL,false,false,false
+^emenda/corretos/.*,EMENDA,false,false,false
+^emendas/errados/.*,EMENDA,true,true,true
+^oai/corretos/.*,OAI,false,false,false
+^oai/errados/.*,OAI,true,true,true

@@ -1,0 +1,677 @@
+<?xml version="1.0" ?>
+<LexML xmlns="http://www.lexml.gov.br/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.lexml.gov.br/1.0 ../xsd/lexml-br-rigido.xsd">
+  <!--       xsi:schemaLocation="http://www.lexml.gov.br/1.0 http://projeto.lexml.gov.br/esquemas/lexml-br-rigido.xsd"> -->
+  <Metadado>
+      <Identificacao URN="urn:lex:br:senado.federal:projeto.lei;plc:2010-01-01;7"/>
+  </Metadado>
+ <ProjetoNorma>
+  <Norma>
+    <ParteInicial>
+      <Epigrafe id="epigrafe">Substitutivo do Senado ao Projeto de Lei da Câmara nº 7, de 2010.</Epigrafe>
+      <Ementa id="ementa">Dispõe sobre a exploração e a produção de petróleo, de gás natural, e de outros hidrocarbonetos fluidos, sob o regime de partilha de produção, em áreas do pré-sal e em áreas estratégicas; altera dispositivos da Lei nº 9.478, de 6 de agosto de 1997; cria o Fundo Social - FS, dispõe sobre sua estrutura e fontes de recursos; e dá outras providências.</Ementa>
+      <Preambulo id="preambulo">
+          <p>O CONGRESSO NACIONAL decreta:          </p>
+</Preambulo>
+    </ParteInicial>
+    <Articulacao>
+              <Capitulo id="cap1"><Rotulo>CAPÍTULO I</Rotulo><NomeAgrupador>DISPOSIÇÕES PRELIMINARES </NomeAgrupador>
+                 <Artigo id="art1"><Rotulo>Art. 1º</Rotulo><Caput id="art1_cpt"><p>Esta Lei dispõe sobre a exploração e a produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos em áreas do pré-sal e em áreas estratégicas, cria o Fundo Social - FS, dispõe sobre sua estrutura e fontes de recursos, e altera a Lei nº 9.478, de 6 de agosto de 1997.</p>
+        </Caput>
+      </Artigo>
+    </Capitulo>
+              <Capitulo id="cap2"><Rotulo>CAPÍTULO II</Rotulo><NomeAgrupador>DAS DEFINIÇÕES TÉCNICAS </NomeAgrupador>
+                 <Artigo id="art2"><Rotulo>Art. 2º</Rotulo><Caput id="art2_cpt"><p>Para os fins desta Lei, ficam estabelecidas as seguintes definições:</p>
+                  <Inciso id="art2_cpt_inc1"><Rotulo> I - </Rotulo><p>partilha de produção: regime de exploração e produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos no qual o contratado exerce, por sua conta e risco, as atividades de exploração, avaliação, desenvolvimento e produção e, em caso de descoberta comercial, adquire o direito à apropriação do custo em óleo, do volume da produção correspondente aos royalties devidos, bem como de parcela do excedente em óleo, na proporção, condições e prazos estabelecidos em contrato;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc2"><Rotulo> II - </Rotulo><p>custo em óleo: parcela da produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos, exigível unicamente em caso de descoberta comercial, correspondente aos custos e aos investimentos realizados pelo contratado na execução das atividades de exploração, avaliação, desenvolvimento, produção e desativação das instalações, sujeita a limites, prazos e condições estabelecidos em contrato;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc3"><Rotulo> III - </Rotulo><p>excedente em óleo: parcela da produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos a ser repartida entre a União e o contratado, segundo critérios definidos em contrato, resultante da diferença entre o volume total da produção e as parcelas relativas ao custo em óleo, aos royalties devidos e, quando exigível, à participação de que trata o art. 43;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc4"><Rotulo> IV - </Rotulo><p>área do pré-sal: região do subsolo formada por um prisma vertical de profundidade indeterminada, com superfície poligonal definida pelas coordenadas geográficas de seus vértices estabelecidas no Anexo desta Lei, bem como outras regiões que venham a ser delimitadas, em ato do Poder Executivo, de acordo com a evolução do conhecimento geológico;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc5"><Rotulo> V - </Rotulo><p>área estratégica: região de interesse para o desenvolvimento nacional, delimitada em ato do Poder Executivo, caracterizada pelo baixo risco exploratório e elevado potencial de produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc6"><Rotulo> VI - </Rotulo><p>operador: a Petróleo Brasileiro S.A. - PETROBRAS, responsável pela condução e execução, direta ou indireta, de todas as atividades de exploração, avaliação, desenvolvimento, produção e desativação das instalações de exploração e produção;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc7"><Rotulo> VII - </Rotulo><p>contratado: a PETROBRAS ou, quando for o caso, o consórcio por ela constituído com o vencedor da licitação para a exploração e produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos em regime de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc8"><Rotulo> VIII - </Rotulo><p>conteúdo local: proporção entre o valor dos bens produzidos e dos serviços prestados no País para execução do contrato e o valor total dos bens utilizados e dos serviços prestados para essa finalidade;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc9"><Rotulo> IX - </Rotulo><p>individualização da produção: procedimento que visa à divisão do resultado da produção e ao aproveitamento racional dos recursos naturais da União por meio da unificação do desenvolvimento e da produção relativos à jazida que se estenda além de bloco concedido ou contratado sob o regime de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc10"><Rotulo> X - </Rotulo><p>ponto de medição: local definido no plano de desenvolvimento de cada campo onde é realizada a medição volumétrica do petróleo ou do gás natural produzido, conforme regulação da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis - ANP;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc11"><Rotulo> XI - </Rotulo><p>ponto de partilha: local em que há divisão entre a União e o contratado do petróleo, de gás natural e de outros hidrocarbonetos fluidos produzidos, nos termos do respectivo contrato de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc12"><Rotulo> XII - </Rotulo><p>bônus de assinatura: valor fixo devido à União pelo contratado, a ser pago no ato da celebração e nos termos do respectivo contrato de partilha de produção; e</p>
+        </Inciso>
+                  <Inciso id="art2_cpt_inc13"><Rotulo> XIII - </Rotulo><p>royalties: compensação financeira devida aos Estados, ao Distrito Federal e aos Municípios, bem como a órgãos da administração direta da União, em função da produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos sob o regime de partilha de produção, nos termos do § 1º do art. 20 da Constituição Federal.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+    </Capitulo>
+              <Capitulo id="cap3"><Rotulo>CAPÍTULO III</Rotulo><NomeAgrupador>DO REGIME DE PARTILHA DE PRODUÇÃO </NomeAgrupador>
+              <Secao id="cap3_sec1"><Rotulo>Seção I</Rotulo><NomeAgrupador>Disposições Gerais </NomeAgrupador>
+                 <Artigo id="art3"><Rotulo>Art. 3º</Rotulo><Caput id="art3_cpt"><p>A exploração e a produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos na área do pré-sal e em áreas estratégicas serão contratadas pela União no regime de partilha de produção, na forma desta Lei.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art4"><Rotulo>Art. 4º</Rotulo><Caput id="art4_cpt"><p>A PETROBRAS será a operadora de todos os blocos contratados sob o regime de partilha de produção, sendo-lhe assegurado, a este título, participação mínima no consórcio previsto no art. 20.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art5"><Rotulo>Art. 5º</Rotulo><Caput id="art5_cpt"><p>A União não assumirá os riscos das atividades de exploração, avaliação, desenvolvimento e produção decorrentes dos contratos de partilha de produção.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art6"><TituloDispositivo>Aqui vai o título do artigo</TituloDispositivo><Rotulo>Art. 6º</Rotulo><Caput id="art6_cpt"><p>Os custos e os investimentos necessários à execução do contrato de partilha de produção serão integralmente suportados pelo contratado, cabendo-lhe, no caso de descoberta comercial, a sua restituição nos termos do inciso II do art. 2º.</p>
+        </Caput>
+                  <Paragrafo id="art6_par1u"><TituloDispositivo>Aqui vai o título do parágrafo</TituloDispositivo><Rotulo>Parágrafo único.</Rotulo><p>A União, por intermédio de fundo específico criado por lei, poderá participar dos investimentos nas atividades de exploração, avaliação, desenvolvimento e produção na área do pré-sal e em áreas estratégicas, caso em que assumirá os riscos correspondentes à sua participação, nos termos do respectivo contrato.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art7"><Rotulo>Art. 7º</Rotulo><Caput id="art7_cpt"><p>Previamente à contratação sob o regime de partilha de produção, o Ministério de Minas e Energia, diretamente ou por meio da ANP, poderá promover a avaliação do potencial das áreas do pré-sal e das áreas estratégicas.</p>
+        </Caput>
+                  <Paragrafo id="art7_par1u"><Rotulo>Parágrafo único.</Rotulo><p>A PETROBRAS poderá ser contratada diretamente para realizar estudos exploratórios necessários à avaliação prevista no caput.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art8"><Rotulo>Art. 8º</Rotulo><Caput id="art8_cpt"><p>A União, por intermédio do Ministério de Minas e Energia, celebrará os contratos de partilha de produção:</p>
+                  <Inciso id="art8_cpt_inc1"><Rotulo> I - </Rotulo><p>diretamente com a PETROBRAS, dispensada a licitação; ou</p>
+        </Inciso>
+                  <Inciso id="art8_cpt_inc2"><Rotulo> II - </Rotulo><p>mediante licitação na modalidade leilão.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art8_par1"><Rotulo>§ 1º</Rotulo><p>A gestão dos contratos previstos no caput caberá a empresa pública a ser criada com este propósito.</p>
+        </Paragrafo>
+                  <Paragrafo id="art8_par2"><Rotulo>§ 2º</Rotulo><p>A empresa pública de que trata o § 1º não assumirá os riscos e não responderá pelos custos e investimentos referentes às atividades de exploração, avaliação, desenvolvimento, produção e desativação das instalações de exploração e produção decorrentes dos contratos de partilha de produção.</p>
+        </Paragrafo>
+      </Artigo>
+    </Secao>
+              <Secao id="cap3_sec2"><Rotulo>Seção II</Rotulo><NomeAgrupador>Das Competências do Conselho Nacional de Política Energética - CNPE </NomeAgrupador>
+                 <Artigo id="art9"><Rotulo>Art. 9º</Rotulo><Caput id="art9_cpt"><p>O Conselho Nacional de Política Energética - CNPE tem como competências, entre outras definidas na legislação, propor ao Presidente da República:</p>
+                  <Inciso id="art9_cpt_inc1"><Rotulo> I - </Rotulo><p>o ritmo de contratação dos blocos sob o regime de partilha de produção, observando-se a política energética, o desenvolvimento e a capacidade da indústria nacional para o fornecimento de bens e serviços;</p>
+        </Inciso>
+                  <Inciso id="art9_cpt_inc2"><Rotulo> II - </Rotulo><p>os blocos que serão destinados à contratação direta com a PETROBRAS sob o regime de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art9_cpt_inc3"><Rotulo> III - </Rotulo><p>os blocos que serão objeto de leilão para contratação sob o regime de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art9_cpt_inc4"><Rotulo> IV - </Rotulo><p>os parâmetros técnicos e econômicos dos contratos de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art9_cpt_inc5"><Rotulo> V - </Rotulo><p>a delimitação de outras regiões a serem classificadas como área do pré-sal e as áreas a serem classificadas como estratégicas, conforme a evolução do conhecimento geológico;</p>
+        </Inciso>
+                  <Inciso id="art9_cpt_inc6"><Rotulo> VI - </Rotulo><p>a política de comercialização do petróleo destinado à União nos contratos de partilha de produção; e</p>
+        </Inciso>
+                  <Inciso id="art9_cpt_inc7"><Rotulo> VII - </Rotulo><p>a política de comercialização do gás natural proveniente dos contratos de partilha de produção, observada a prioridade de abastecimento do mercado nacional.</p>
+                  <Alteracao id="art9_cpt_inc7_alt1">
+                        <Artigo id="art9_cpt_inc7_alt1_art1" abreAspas="s"><Rotulo>Art 1º</Rotulo>
+                            <Caput id="art9_cpt_inc7_alt1_art1_cpt"><p>Testando alteração em dentro de inciso.</p>
+                                <Pena id="art9_cpt_inc7_alt1_art1_cpt_pen" fechaAspas="s" notaAlteracao="NR">
+                                    <p>Bla bla bla...</p>
+                                </Pena>
+                            </Caput>
+                        </Artigo>
+                  </Alteracao>
+        </Inciso>
+        </Caput>
+      </Artigo>
+    </Secao>
+              <Secao id="cap3_sec3"><Rotulo>Seção III</Rotulo><NomeAgrupador>Das Competências do Ministério de Minas e Energia </NomeAgrupador>
+                 <Artigo id="art10"><Rotulo>Art. 10.</Rotulo><Caput id="art10_cpt"><p>Caberá ao Ministério de Minas e Energia, entre outras competências:</p>
+                  <Inciso id="art10_cpt_inc1"><Rotulo> I - </Rotulo><p>planejar o aproveitamento do petróleo e do gás natural;</p>
+        </Inciso>
+                  <Inciso id="art10_cpt_inc2"><Rotulo> II - </Rotulo><p>propor ao CNPE, ouvida a ANP, a definição dos blocos que serão objeto de concessão ou de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art10_cpt_inc3"><Rotulo> III - </Rotulo><p>propor ao CNPE os seguintes parâmetros técnicos e econômicos dos contratos de partilha de produção:</p>
+                  <Alinea id="art10_cpt_inc3_ali1"><Rotulo> a) </Rotulo><p>os critérios para definição do excedente em óleo da União;</p>
+          </Alinea>
+                  <Alinea id="art10_cpt_inc3_ali2"><Rotulo> b) </Rotulo><p>o percentual mínimo do excedente em óleo da União;</p>
+          </Alinea>
+                  <Alinea id="art10_cpt_inc3_ali3"><Rotulo> c) </Rotulo><p>a participação mínima da PETROBRAS no consórcio previsto no art. 20, que não poderá ser inferior a 30% (trinta por cento);</p>
+          </Alinea>
+                  <Alinea id="art10_cpt_inc3_ali4"><Rotulo> d) </Rotulo><p>os limites, prazos, critérios e condições para o cálculo e apropriação pelo contratado do custo em óleo e do volume da produção correspondente aos royalties devidos;</p>
+          </Alinea>
+                  <Alinea id="art10_cpt_inc3_ali5"><Rotulo> e) </Rotulo><p>o conteúdo local mínimo e outros critérios relacionados ao desenvolvimento da indústria nacional; e</p>
+          </Alinea>
+                  <Alinea id="art10_cpt_inc3_ali6"><Rotulo> f) </Rotulo><p>o valor do bônus de assinatura, bem como a parcela a ser destinada à empresa pública de que trata o § 1º do art. 8º;</p>
+          </Alinea>
+        </Inciso>
+                  <Inciso id="art10_cpt_inc4"><Rotulo> IV - </Rotulo><p>estabelecer as diretrizes a serem observadas pela ANP para promoção da licitação prevista no inciso II do art. 8º, bem como para a elaboração das minutas dos editais e dos contratos de partilha de produção; e</p>
+        </Inciso>
+                  <Inciso id="art10_cpt_inc5"><Rotulo> V - </Rotulo><p>aprovar as minutas dos editais de licitação e dos contratos de partilha de produção elaborados pela ANP.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art10_par1"><Rotulo>§ 1º</Rotulo><p>Ao final de cada semestre, o Ministério de Minas e Energia emitirá relatório sobre as atividades relacionadas aos contratos de partilha de produção.</p>
+        </Paragrafo>
+                  <Paragrafo id="art10_par2"><Rotulo>§ 2º</Rotulo><p>O relatório será publicado até 30 (trinta) dias após o encerramento do semestre, ficando assegurado amplo acesso ao público.</p>
+        </Paragrafo>
+      </Artigo>
+    </Secao>
+              <Secao id="cap3_sec4"><Rotulo>Seção IV</Rotulo><NomeAgrupador>Das Competências da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis - ANP </NomeAgrupador>
+                 <Artigo id="art11"><Rotulo>Art. 11.</Rotulo><Caput id="art11_cpt"><p>Caberá à ANP, entre outras competências definidas em lei:</p>
+                  <Inciso id="art11_cpt_inc1"><Rotulo> I - </Rotulo><p>promover estudos técnicos para subsidiar o Ministério de Minas e Energia na delimitação dos blocos que serão objeto de contrato de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art11_cpt_inc2"><Rotulo> II - </Rotulo><p>elaborar e submeter à aprovação do Ministério de Minas e Energia as minutas dos contratos de partilha de produção e dos editais, no caso de licitação;</p>
+        </Inciso>
+                  <Inciso id="art11_cpt_inc3"><Rotulo> III - </Rotulo><p>promover as licitações previstas no inciso II do art. 8º;</p>
+        </Inciso>
+                  <Inciso id="art11_cpt_inc4"><Rotulo> IV - </Rotulo><p>fazer cumprir as melhores práticas da indústria do petróleo;</p>
+        </Inciso>
+                  <Inciso id="art11_cpt_inc5"><Rotulo> V - </Rotulo><p>analisar e aprovar, de acordo com o disposto no inciso IV, os planos de exploração, de avaliação e de desenvolvimento da produção, bem como os programas anuais de trabalho e de produção relativos aos contratos de partilha de produção; e</p>
+        </Inciso>
+                  <Inciso id="art11_cpt_inc6"><Rotulo> VI - </Rotulo><p>regular e fiscalizar as atividades realizadas sob o regime de partilha de produção, nos termos do inciso VII do art. 8º da Lei nº 9.478, de 6 de agosto de 1997.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+    </Secao>
+              <Secao id="cap3_sec5"><Rotulo>Seção V</Rotulo><NomeAgrupador>Da Contratação Direta </NomeAgrupador>
+                 <Artigo id="art12"><Rotulo>Art. 12.</Rotulo><Caput id="art12_cpt"><p>O CNPE proporá ao Presidente da República os casos em que, com vistas na preservação do interesse nacional e no atendimento dos demais objetivos da política energética, a PETROBRAS será contratada diretamente pela União para a exploração e produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos em regime de partilha de produção.</p>
+        </Caput>
+                  <Paragrafo id="art12_par1u"><Rotulo>Parágrafo único.</Rotulo><p>Os parâmetros da contratação prevista no caput serão propostos pelo CNPE, nos termos do inciso IV do art. 9º e do inciso III do art. 10, no que couber.</p>
+        </Paragrafo>
+      </Artigo>
+    </Secao>
+              <Secao id="cap3_sec6"><Rotulo>Seção VI</Rotulo><NomeAgrupador>Da Licitação </NomeAgrupador>
+                 <Artigo id="art13"><Rotulo>Art. 13.</Rotulo><Caput id="art13_cpt"><p>A licitação para a contratação sob o regime de partilha de produção obedecerá ao disposto nesta Lei, nas normas a serem expedidas pela ANP e no respectivo edital.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art14"><Rotulo>Art. 14.</Rotulo><Caput id="art14_cpt"><p>A PETROBRAS poderá participar da licitação prevista no inciso II do art. 8º para ampliar a sua participação mínima definida nos termos da alínea c do inciso III do art. 10.</p>
+        </Caput>
+      </Artigo>
+              <Subsecao id="cap3_sec6_sub1"><Rotulo>Subseção I</Rotulo><NomeAgrupador>Do Edital de Licitação </NomeAgrupador>
+                 <Artigo id="art15"><Rotulo>Art. 15.</Rotulo><Caput id="art15_cpt"><p>O edital de licitação será acompanhado da minuta básica do respectivo contrato e indicará, obrigatoriamente:</p>
+                  <Inciso id="art15_cpt_inc1"><Rotulo> I - </Rotulo><p>o bloco objeto do contrato de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc2"><Rotulo> II - </Rotulo><p>o critério de julgamento da licitação, nos termos do art. 18;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc3"><Rotulo> III - </Rotulo><p>o percentual mínimo do excedente em óleo da União;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc4"><Rotulo> IV - </Rotulo><p>a formação do consórcio previsto no art. 20 e a respectiva participação mínima da PETROBRAS;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc5"><Rotulo> V - </Rotulo><p>os limites, prazos, critérios e condições para o cálculo e apropriação pelo contratado do custo em óleo e do volume da produção correspondente aos royalties devidos;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc6"><Rotulo> VI - </Rotulo><p>os critérios para definição do excedente em óleo do contratado;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc7"><Rotulo> VII - </Rotulo><p>o programa exploratório mínimo e os investimentos estimados correspondentes;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc8"><Rotulo> VIII - </Rotulo><p>o conteúdo local mínimo e outros critérios relacionados ao desenvolvimento da indústria nacional;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc9"><Rotulo> IX - </Rotulo><p>o valor do bônus de assinatura, bem como a parcela a ser destinada à empresa pública de que trata o § 1º do art. 8º;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc10"><Rotulo> X - </Rotulo><p>as regras e as fases da licitação;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc11"><Rotulo> XI - </Rotulo><p>as regras aplicáveis à participação conjunta de empresas na licitação;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc12"><Rotulo> XII - </Rotulo><p>a relação de documentos exigidos e os critérios de habilitação técnica, jurídica, econômico-financeira e fiscal dos licitantes;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc13"><Rotulo> XIII - </Rotulo><p>a garantia a ser apresentada pelo licitante para sua habilitação;</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc14"><Rotulo> XIV - </Rotulo><p>o prazo, o local e o horário em que serão fornecidos aos licitantes os dados, estudos e demais elementos e informações necessários à elaboração das propostas, bem como o custo de sua aquisição; e</p>
+        </Inciso>
+                  <Inciso id="art15_cpt_inc15"><Rotulo> XV - </Rotulo><p>o local, o horário e a forma para apresentação das propostas.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art16"><Rotulo>Art. 16.</Rotulo><Caput id="art16_cpt"><p>Quando permitida a participação conjunta de empresas na licitação, o edital conterá, entre outras, as seguintes exigências:</p>
+                  <Inciso id="art16_cpt_inc1"><Rotulo> I - </Rotulo><p>comprovação de compromisso, público ou particular, de constituição do consórcio previsto no art. 20, subscrito pelas proponentes;</p>
+        </Inciso>
+                  <Inciso id="art16_cpt_inc2"><Rotulo> II - </Rotulo><p>indicação da empresa responsável no processo licitatório, sem prejuízo da responsabilidade solidária das demais proponentes;</p>
+        </Inciso>
+                  <Inciso id="art16_cpt_inc3"><Rotulo> III - </Rotulo><p>apresentação por parte de cada uma das empresas proponentes dos documentos exigidos para efeito de avaliação da qualificação técnica e econômico-financeira do consórcio a ser constituído; e</p>
+        </Inciso>
+                  <Inciso id="art16_cpt_inc4"><Rotulo> IV - </Rotulo><p>proibição de participação de uma mesma empresa, conjunta ou isoladamente, em mais de uma proposta na licitação de um mesmo bloco.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art17"><Rotulo>Art. 17.</Rotulo><Caput id="art17_cpt"><p>O edital conterá a exigência de que a empresa estrangeira que concorrer em conjunto com outras empresas ou isoladamente deverá apresentar com sua proposta, e em envelope separado:</p>
+                  <Inciso id="art17_cpt_inc1"><Rotulo> I - </Rotulo><p>prova de capacidade técnica, idoneidade financeira e regularidade jurídica e fiscal;</p>
+        </Inciso>
+                  <Inciso id="art17_cpt_inc2"><Rotulo> II - </Rotulo><p>inteiro teor dos atos constitutivos e prova de encontrar-se organizada e em funcionamento regular, conforme a lei de seu país;</p>
+        </Inciso>
+                  <Inciso id="art17_cpt_inc3"><Rotulo> III - </Rotulo><p>designação de um representante legal perante a ANP, com poderes especiais para a prática de atos e assunção de responsabilidades relativamente à licitação e à proposta apresentada; e</p>
+        </Inciso>
+                  <Inciso id="art17_cpt_inc4"><Rotulo> IV - </Rotulo><p>compromisso de constituir empresa segundo as leis brasileiras, com sede e administração no Brasil, caso seja vencedora da licitação.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+    </Subsecao>
+              <Subsecao id="cap3_sec6_sub2"><Rotulo>Subseção II</Rotulo><NomeAgrupador>Do Julgamento da Licitação </NomeAgrupador>
+                 <Artigo id="art18"><Rotulo>Art. 18.</Rotulo><Caput id="art18_cpt"><p>O julgamento da licitação identificará a proposta mais vantajosa segundo o critério da oferta de maior excedente em óleo para a União, respeitado o percentual mínimo definido nos termos da alínea b do inciso III do art. 10.</p>
+        </Caput>
+      </Artigo>
+    </Subsecao>
+    </Secao>
+              <Secao id="cap3_sec7"><Rotulo>Seção VII</Rotulo><NomeAgrupador>Do Consórcio </NomeAgrupador>
+                 <Artigo id="art19"><Rotulo>Art. 19.</Rotulo><Caput id="art19_cpt"><p>A PETROBRAS, quando contratada diretamente ou no caso de ser vencedora isolada da licitação, deverá constituir consórcio com a empresa pública de que trata o § 1º do art. 8º, na forma do disposto no art. 279 da Lei nº 6.404, de 15 de dezembro de 1976.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art20"><Rotulo>Art. 20.</Rotulo><Caput id="art20_cpt"><p>O licitante vencedor deverá constituir consórcio com a PETROBRAS e com a empresa pública de que trata o § 1º do art. 8º, na forma do disposto no art. 279 da Lei nº 6.404, de 15 de dezembro de 1976.</p>
+        </Caput>
+                  <Paragrafo id="art20_par1"><Rotulo>§ 1º</Rotulo><p>A participação da PETROBRAS no consórcio implicará sua adesão às regras do edital e à proposta vencedora.</p>
+        </Paragrafo>
+                  <Paragrafo id="art20_par2"><Rotulo>§ 2º</Rotulo><p>Os direitos e obrigações patrimoniais da PETROBRAS e demais contratados serão proporcionais à sua participação no consórcio.</p>
+        </Paragrafo>
+                  <Paragrafo id="art20_par3"><Rotulo>§ 3º</Rotulo><p>O contrato de constituição de consórcio deverá indicar a PETROBRAS como responsável pela execução do contrato, sem prejuízo da responsabilidade solidária das consorciadas perante o contratante ou terceiros, observado o disposto no § 2º do art. 8º.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art21"><Rotulo>Art. 21.</Rotulo><Caput id="art21_cpt"><p>A empresa pública de que trata o § 1º do art. 8º integrará o consórcio como representante dos interesses da União no contrato de partilha de produção.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art22"><Rotulo>Art. 22.</Rotulo><Caput id="art22_cpt"><p>A administração do consórcio caberá ao seu comitê operacional.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art23"><Rotulo>Art. 23.</Rotulo><Caput id="art23_cpt"><p>O comitê operacional será composto por representantes da empresa pública de que trata o § 1º do art. 8º e dos demais consorciados.</p>
+        </Caput>
+                  <Paragrafo id="art23_par1u"><Rotulo>Parágrafo único.</Rotulo><p>A empresa pública de que trata o § 1º do art. 8º indicará a metade dos integrantes do comitê operacional, inclusive o seu presidente, cabendo aos demais consorciados a indicação dos outros integrantes.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art24"><Rotulo>Art. 24.</Rotulo><Caput id="art24_cpt"><p>Caberá ao comitê operacional:</p>
+                  <Inciso id="art24_cpt_inc1"><Rotulo> I - </Rotulo><p>definir os planos de exploração a serem submetidos à análise e aprovação da ANP;</p>
+        </Inciso>
+                  <Inciso id="art24_cpt_inc2"><Rotulo> II - </Rotulo><p>definir o plano de avaliação de descoberta de jazida de petróleo e de gás natural a ser submetido à análise e à aprovação da ANP;</p>
+        </Inciso>
+                  <Inciso id="art24_cpt_inc3"><Rotulo> III - </Rotulo><p>declarar a comercialidade de cada jazida descoberta e definir o plano de desenvolvimento da produção do campo, a ser submetido à análise e aprovação da ANP;</p>
+        </Inciso>
+                  <Inciso id="art24_cpt_inc4"><Rotulo> IV - </Rotulo><p>definir os programas anuais de trabalho e de produção a serem submetidos à análise e aprovação da ANP;</p>
+        </Inciso>
+                  <Inciso id="art24_cpt_inc5"><Rotulo> V - </Rotulo><p>analisar e aprovar os orçamentos relacionados às atividades de exploração, avaliação, desenvolvimento e produção previstas no contrato;</p>
+        </Inciso>
+                  <Inciso id="art24_cpt_inc6"><Rotulo> VI - </Rotulo><p>supervisionar as operações e aprovar a contabilização dos custos realizados;</p>
+        </Inciso>
+                  <Inciso id="art24_cpt_inc7"><Rotulo> VII - </Rotulo><p>definir os termos do acordo de individualização da produção a ser firmado com o titular da área adjacente, observado o disposto no Capítulo IV desta Lei; e</p>
+        </Inciso>
+                  <Inciso id="art24_cpt_inc8"><Rotulo> VIII - </Rotulo><p>outras atribuições definidas no contrato de partilha de produção.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art25"><Rotulo>Art. 25.</Rotulo><Caput id="art25_cpt"><p>O presidente do comitê operacional terá poder de veto e voto de qualidade, conforme previsto no contrato de partilha de produção.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art26"><Rotulo>Art. 26.</Rotulo><Caput id="art26_cpt"><p>A assinatura do contrato de partilha de produção ficará condicionada à comprovação do arquivamento do instrumento constitutivo do consórcio no Registro do Comércio do lugar da sua sede.</p>
+        </Caput>
+      </Artigo>
+    </Secao>
+              <Secao id="cap3_sec8"><Rotulo>Seção VIII</Rotulo><NomeAgrupador>Do Contrato de Partilha de Produção </NomeAgrupador>
+                 <Artigo id="art27"><Rotulo>Art. 27.</Rotulo><Caput id="art27_cpt"><p>O contrato de partilha de produção preverá duas fases:</p>
+                  <Inciso id="art27_cpt_inc1"><Rotulo> I - </Rotulo><p>a de exploração, que incluirá as atividades de avaliação de eventual descoberta de petróleo ou gás natural, para determinação de sua comercialidade; e</p>
+        </Inciso>
+                  <Inciso id="art27_cpt_inc2"><Rotulo> II - </Rotulo><p>a de produção, que incluirá as atividades de desenvolvimento.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art28"><Rotulo>Art. 28.</Rotulo><Caput id="art28_cpt"><p>O contrato de partilha de produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos não se estende a nenhum outro recurso natural, ficando o operador obrigado a informar a sua descoberta, nos termos do inciso I do art. 30.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art29"><Rotulo>Art. 29.</Rotulo><Caput id="art29_cpt"><p>São cláusulas essenciais do contrato de partilha de produção:</p>
+                  <Inciso id="art29_cpt_inc1"><Rotulo> I - </Rotulo><p>a definição do bloco objeto do contrato;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc2"><Rotulo> II - </Rotulo><p>a obrigação de o contratado assumir os riscos das atividades de exploração, avaliação, desenvolvimento e produção;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc3"><Rotulo> III - </Rotulo><p>a indicação das garantias a serem prestadas pelo contratado;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc4"><Rotulo> IV - </Rotulo><p>o direito do contratado à apropriação do custo em óleo, exigível unicamente em caso de descoberta comercial;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc5"><Rotulo> V - </Rotulo><p>os limites, prazos, critérios e condições para o cálculo e apropriação pelo contratado do custo em óleo e do volume da produção correspondente aos royalties devidos;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc6"><Rotulo> VI - </Rotulo><p>os critérios para cálculo do valor do petróleo ou gás natural, em função dos preços de mercado, da especificação do produto e da localização do campo;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc7"><Rotulo> VII - </Rotulo><p>as regras e os prazos para a repartição do excedente em óleo, podendo incluir critérios relacionados à eficiência econômica, à rentabilidade, ao volume de produção e à variação do preço do petróleo e do gás natural, observado o percentual estabelecido segundo o disposto no art. 18;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc8"><Rotulo> VIII - </Rotulo><p>as atribuições, a composição, o funcionamento, a forma de tomada de decisões e de solução de controvérsias no âmbito do comitê operacional;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc9"><Rotulo> IX - </Rotulo><p>as regras de contabilização, bem como os procedimentos para acompanhamento e controle das atividades de exploração, avaliação, desenvolvimento e produção;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc10"><Rotulo> X - </Rotulo><p>as regras para a realização de atividades, por conta e risco do contratado, que não implicarão qualquer obrigação para a União ou contabilização no valor do custo em óleo;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc11"><Rotulo> XI - </Rotulo><p>o prazo de duração da fase de exploração e as condições para sua prorrogação;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc12"><Rotulo> XII - </Rotulo><p>o programa exploratório mínimo e as condições para sua revisão;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc13"><Rotulo> XIII - </Rotulo><p>os critérios para formulação e revisão dos planos de exploração e de desenvolvimento da produção, bem como respectivos planos de trabalhos, incluindo os pontos de medição e de partilha do petróleo, de gás natural e de outros hidrocarbonetos fluidos produzidos;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc14"><Rotulo> XIV - </Rotulo><p>a obrigatoriedade de o contratado fornecer à ANP e à empresa pública de que trata o § 1º do art. 8º relatórios dados e informações relativos à execução do contrato;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc15"><Rotulo> XV - </Rotulo><p>os critérios para devolução e desocupação de áreas pelo contratado, inclusive para a retirada de equipamentos e instalações, e reversão de bens;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc16"><Rotulo> XVI - </Rotulo><p>as penalidades aplicáveis em caso de inadimplemento das obrigações contratuais;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc17"><Rotulo> XVII - </Rotulo><p>os procedimentos relacionados à cessão dos direitos e obrigações relativos ao contrato, conforme o disposto no art. 31;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc18"><Rotulo> XVIII - </Rotulo><p>as regras sobre solução de controvérsias, podendo prever conciliação e arbitragem;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc19"><Rotulo> XIX - </Rotulo><p>o prazo de vigência do contrato, limitado a 35 (trinta e cinco) anos, e as condições para a sua extinção;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc20"><Rotulo> XX - </Rotulo><p>o valor e a forma de pagamento do bônus de assinatura;</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc21"><Rotulo> XXI - </Rotulo><p>a obrigatoriedade de apresentação de inventário periódico sobre as emissões de gases que provocam efeito estufa - GEF, ao qual dar-se-á publicidade, inclusive com cópia ao Congresso Nacional; e</p>
+        </Inciso>
+                  <Inciso id="art29_cpt_inc22"><Rotulo> XXII - </Rotulo><p>a apresentação de Plano de Contingência relativo a acidentes por vazamento de petróleo, gás natural, outros hidrocarbonetos fluidos e seus derivados.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art30"><Rotulo>Art. 30.</Rotulo><Caput id="art30_cpt"><p>A PETROBRAS, na condição de operadora do contrato de partilha de produção, deverá:</p>
+                  <Inciso id="art30_cpt_inc1"><Rotulo> I - </Rotulo><p>informar ao comitê operacional e à ANP, no prazo contratual, a descoberta de qualquer jazida de petróleo, de gás natural, de outros hidrocarbonetos fluidos ou de quaisquer minerais;</p>
+        </Inciso>
+                  <Inciso id="art30_cpt_inc2"><Rotulo> II - </Rotulo><p>submeter à aprovação do comitê operacional o plano de avaliação de descoberta de jazida de petróleo, de gás natural e de outros hidrocarbonetos fluidos, para determinação de sua comercialidade;</p>
+        </Inciso>
+                  <Inciso id="art30_cpt_inc3"><Rotulo> III - </Rotulo><p>realizar a avaliação da descoberta de jazida de petróleo e de gás natural nos termos do plano de avaliação aprovado pela ANP, apresentando relatório de comercialidade ao comitê operacional;</p>
+        </Inciso>
+                  <Inciso id="art30_cpt_inc4"><Rotulo> IV - </Rotulo><p>submeter ao comitê operacional o plano de desenvolvimento da produção do campo, bem como os planos de trabalho e de produção, contendo cronogramas e orçamentos;</p>
+        </Inciso>
+                  <Inciso id="art30_cpt_inc5"><Rotulo> V - </Rotulo><p>adotar as melhores práticas da indústria do petróleo, obedecendo às normas e aos procedimentos técnicos e científicos pertinentes e utilizando técnicas apropriadas de recuperação, objetivando a racionalização da produção e o controle do declínio das reservas; e</p>
+        </Inciso>
+                  <Inciso id="art30_cpt_inc6"><Rotulo> VI - </Rotulo><p>encaminhar ao comitê operacional todos os dados e documentos relativos às atividades realizadas.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art31"><Rotulo>Art. 31.</Rotulo><Caput id="art31_cpt"><p>A cessão dos direitos e obrigações relativos ao contrato de partilha de produção somente poderá ocorrer mediante prévia e expressa autorização do Ministério de Minas e Energia, ouvida a ANP, observadas as seguintes condições:</p>
+                  <Inciso id="art31_cpt_inc1"><Rotulo> I - </Rotulo><p>preservação do objeto contratual e de suas condições;</p>
+        </Inciso>
+                  <Inciso id="art31_cpt_inc2"><Rotulo> II - </Rotulo><p>atendimento por parte do cessionário dos requisitos técnicos, econômicos e jurídicos estabelecidos pelo Ministério de Minas e Energia; e</p>
+        </Inciso>
+                  <Inciso id="art31_cpt_inc3"><Rotulo> III - </Rotulo><p>exercício do direito de preferência dos demais consorciados, na proporção de suas participações no consórcio.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art31_par1u"><Rotulo>Parágrafo único.</Rotulo><p>A PETROBRAS somente poderá ceder a participação nos contratos de partilha de produção que obtiver como vencedora da licitação, nos termos do art. 14.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art32"><Rotulo>Art. 32.</Rotulo><Caput id="art32_cpt"><p>O contrato de partilha de produção extinguir-se-á:</p>
+                  <Inciso id="art32_cpt_inc1"><Rotulo> I - </Rotulo><p>pelo vencimento do seu prazo;</p>
+        </Inciso>
+                  <Inciso id="art32_cpt_inc2"><Rotulo> II - </Rotulo><p>por acordo entre as partes;</p>
+        </Inciso>
+                  <Inciso id="art32_cpt_inc3"><Rotulo> III - </Rotulo><p>pelos motivos de resolução nele previstos;</p>
+        </Inciso>
+                  <Inciso id="art32_cpt_inc4"><Rotulo> IV - </Rotulo><p>ao término da fase de exploração, sem que tenha sido feita qualquer descoberta comercial, conforme definido no contrato;</p>
+        </Inciso>
+                  <Inciso id="art32_cpt_inc5"><Rotulo> V - </Rotulo><p>pelo exercício do direito de desistência pelo contratado na fase de exploração, desde que cumprido o programa exploratório mínimo ou pago o valor correspondente à parcela não cumprida, conforme previsto no contrato; e</p>
+        </Inciso>
+                  <Inciso id="art32_cpt_inc6"><Rotulo> VI - </Rotulo><p>pela recusa em firmar o acordo de individualização da produção, após decisão da ANP.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art32_par1"><Rotulo>§ 1º</Rotulo><p>A devolução de áreas não implicará obrigação de qualquer natureza para a União nem conferirá ao contratado qualquer direito de indenização pelos serviços e bens.</p>
+        </Paragrafo>
+                  <Paragrafo id="art32_par2"><Rotulo>§ 2º</Rotulo><p>Extinto o contrato de partilha de produção, o contratado fará a remoção dos equipamentos e bens que não sejam objeto de reversão, ficando obrigado a reparar ou indenizar os danos decorrentes de suas atividades e praticar os atos de recuperação ambiental determinados pelas autoridades competentes.</p>
+        </Paragrafo>
+      </Artigo>
+    </Secao>
+    </Capitulo>
+              <Capitulo id="cap4"><Rotulo>CAPÍTULO IV</Rotulo><NomeAgrupador>DA INDIVIDUALIZAÇÃO DA PRODUÇÃO </NomeAgrupador>
+                 <Artigo id="art33"><Rotulo>Art. 33.</Rotulo><Caput id="art33_cpt"><p>O procedimento de individualização da produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos deverá ser instaurado quando se identificar que a jazida se estende além do bloco concedido ou contratado sob o regime de partilha de produção.</p>
+        </Caput>
+                  <Paragrafo id="art33_par1"><Rotulo>§ 1º</Rotulo><p>O concessionário ou o contratado sob o regime de partilha de produção deverá informar à ANP que a jazida será objeto de acordo de individualização da produção.</p>
+        </Paragrafo>
+                  <Paragrafo id="art33_par2"><Rotulo>§ 2º</Rotulo><p>A ANP determinará o prazo para que os interessados celebrem o acordo de individualização da produção, observadas as diretrizes do CNPE.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art34"><Rotulo>Art. 34.</Rotulo><Caput id="art34_cpt"><p>A ANP regulará os procedimentos e as diretrizes para elaboração do acordo de individualização da produção, o qual estipulará:</p>
+                  <Inciso id="art34_cpt_inc1"><Rotulo> I - </Rotulo><p>a participação de cada uma das partes na jazida individualizada, bem como as hipóteses e os critérios de sua revisão;</p>
+        </Inciso>
+                  <Inciso id="art34_cpt_inc2"><Rotulo> II - </Rotulo><p>o plano de desenvolvimento da área objeto da individualização da produção; e</p>
+        </Inciso>
+                  <Inciso id="art34_cpt_inc3"><Rotulo> III - </Rotulo><p>os mecanismos de solução de controvérsias.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art34_par1u"><Rotulo>Parágrafo único.</Rotulo><p>A ANP acompanhará a negociação entre os interessados sobre os termos do acordo de individualização da produção.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art35"><Rotulo>Art. 35.</Rotulo><Caput id="art35_cpt"><p>O acordo de individualização da produção indicará o operador da respectiva jazida.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art36"><Rotulo>Art. 36.</Rotulo><Caput id="art36_cpt"><p>A União, representada pela empresa pública referida no § 1º do art. 8º e com base nas avaliações realizadas pela ANP, celebrará com os interessados, nos casos em que as jazidas da área do pré-sal e das áreas estratégicas se estendam por áreas não concedidas ou não partilhadas, acordo de individualização da produção, cujos termos e condições obrigarão o futuro concessionário ou contratado sob regime de partilha de produção.</p>
+        </Caput>
+                  <Paragrafo id="art36_par1"><Rotulo>§ 1º</Rotulo><p>A ANP deverá fornecer à empresa pública referida no § 1º do art. 8º todas as informações necessárias para o acordo de individualização da produção.</p>
+        </Paragrafo>
+                  <Paragrafo id="art36_par2"><Rotulo>§ 2º</Rotulo><p>O regime de exploração e produção a ser adotado nas áreas de que trata o caput independe do regime vigente nas áreas adjacentes.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art37"><Rotulo>Art. 37.</Rotulo><Caput id="art37_cpt"><p>A União, representada pela ANP, celebrará com os interessados, após as devidas avaliações, nos casos em que a jazida não se localize na área do pré-sal ou em áreas estratégicas e se estenda por áreas não concedidas, acordo de individualização da produção, cujos termos e condições obrigarão o futuro concessionário.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art38"><Rotulo>Art. 38.</Rotulo><Caput id="art38_cpt"><p>A ANP poderá contratar diretamente a PETROBRAS para realizar as atividades de avaliação das jazidas previstas nos arts. 36 e 37.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art39"><Rotulo>Art. 39.</Rotulo><Caput id="art39_cpt"><p>Os acordos de individualização da produção serão submetidos à prévia aprovação da ANP.</p>
+        </Caput>
+                  <Paragrafo id="art39_par1u"><Rotulo>Parágrafo único.</Rotulo><p>A ANP deverá se manifestar em até 60 (sessenta) dias, contados do recebimento da proposta de acordo.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art40"><Rotulo>Art. 40.</Rotulo><Caput id="art40_cpt"><p>Transcorrido o prazo estabelecido no § 2º do art. 33 e não havendo acordo entre as partes, caberá à ANP determinar, em até 120 (cento e vinte) dias e com base em laudo técnico, a forma como serão apropriados os direitos e obrigações sobre a jazida e notificar as partes para que firmem o respectivo acordo de individualização da produção.</p>
+        </Caput>
+                  <Paragrafo id="art40_par1u"><Rotulo>Parágrafo único.</Rotulo><p>A recusa de uma das partes em firmar o acordo de individualização da produção implicará resolução dos contratos de concessão ou de partilha de produção.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art41"><Rotulo>Art. 41.</Rotulo><Caput id="art41_cpt"><p>O desenvolvimento e a produção da jazida ficarão suspensos enquanto não aprovado o acordo de individualização da produção, exceto nos casos autorizados e sob as condições definidas pela ANP.</p>
+        </Caput>
+      </Artigo>
+    </Capitulo>
+              <Capitulo id="cap5"><Rotulo>CAPÍTULO V</Rotulo><NomeAgrupador>DAS RECEITAS GOVERNAMENTAIS NO REGIME DE PARTILHA DE PRODUÇÃO </NomeAgrupador>
+                 <Artigo id="art42"><Rotulo>Art. 42.</Rotulo><Caput id="art42_cpt"><p>O regime de partilha de produção terá as seguintes receitas governamentais:</p>
+                  <Inciso id="art42_cpt_inc1"><Rotulo> I - </Rotulo><p>royalties; e</p>
+        </Inciso>
+                  <Inciso id="art42_cpt_inc2"><Rotulo> II - </Rotulo><p>bônus de assinatura.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art42_par1"><Rotulo>§ 1º</Rotulo><p>Os royalties correspondem à compensação financeira pela exploração de petróleo, de gás natural e de outros hidrocarbonetos fluidos de que trata o § 1º do art. 20 da Constituição Federal, vedada sua inclusão no cálculo do custo em óleo.</p>
+        </Paragrafo>
+                  <Paragrafo id="art42_par2"><Rotulo>§ 2º</Rotulo><p>O bônus de assinatura não integra o custo em óleo e corresponde a valor fixo devido à União pelo contratado e será estabelecido pelo contrato de partilha de produção, devendo ser pago no ato da sua assinatura.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art43"><Rotulo>Art. 43.</Rotulo><Caput id="art43_cpt"><p>O contrato de partilha de produção, quando o bloco se localizar em terra, conterá cláusula determinando o pagamento, em moeda nacional, de participação equivalente a até 1% (um por cento) do valor da produção de petróleo ou gás natural aos proprietários da terra onde se localiza o bloco.</p>
+        </Caput>
+                  <Paragrafo id="art43_par1"><Rotulo>§ 1º</Rotulo><p>A participação a que se refere o caput será distribuída na proporção da produção realizada nas propriedades regularmente demarcadas na superfície do bloco, vedada sua inclusão no cálculo do custo em óleo.</p>
+        </Paragrafo>
+                  <Paragrafo id="art43_par2"><Rotulo>§ 2º</Rotulo><p>O cálculo da participação de terceiro de que trata o caput será efetivado pela ANP.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art44"><Rotulo>Art. 44.</Rotulo><Caput id="art44_cpt"><p>Não se aplicará o disposto no art. 50 da Lei nº 9.478, de 6 de agosto de 1997, aos contratos de partilha de produção.</p>
+        </Caput>
+      </Artigo>
+    </Capitulo>
+              <Capitulo id="cap6"><Rotulo>CAPÍTULO VI</Rotulo><NomeAgrupador>DA COMERCIALIZAÇÃO DO PETRÓLEO, DO GÁS NATURAL E DE OUTROS HIDROCARBONETOS FLUIDOS DA UNIÃO </NomeAgrupador>
+                 <Artigo id="art45"><Rotulo>Art. 45.</Rotulo><Caput id="art45_cpt"><p>O petróleo, o gás natural e outros hidrocarbonetos fluidos destinados à União serão comercializados de acordo com as normas do direito privado, dispensada a licitação, segundo a política de comercialização referida nos incisos VI e VII do art. 9º.</p>
+        </Caput>
+                  <Paragrafo id="art45_par1u"><Rotulo>Parágrafo único.</Rotulo><p>A empresa pública de que trata o § 1º do art. 8º, representando a União, poderá contratar diretamente a PETROBRAS, dispensada a licitação, como agente comercializador do petróleo, do gás natural e de outros hidrocarbonetos fluidos referidos no caput.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art46"><Rotulo>Art. 46.</Rotulo><Caput id="art46_cpt"><p>A receita advinda da comercialização referida no art. 45 será destinada ao Fundo Social, conforme dispõem os arts. 47 a 60 do Capítulo VII.</p>
+        </Caput>
+      </Artigo>
+    </Capitulo>
+              <Capitulo id="cap7"><Rotulo>CAPÍTULO VII</Rotulo><NomeAgrupador>DO FUNDO SOCIAL - FS </NomeAgrupador>
+              <Secao id="cap7_sec1"><Rotulo>Seção I</Rotulo><NomeAgrupador>Da definição e objetivos do Fundo Social </NomeAgrupador>
+                 <Artigo id="art47"><Rotulo>Art. 47</Rotulo><Caput id="art47_cpt"><p>- Fica criado o Fundo Social - FS, de natureza contábil e financeira, vinculado à Presidência da República, com a finalidade de constituir fonte de recursos para o desenvolvimento social e regional, na forma de programas e projetos nas áreas de combate à pobreza e de desenvolvimento:</p>
+                  <Inciso id="art47_cpt_inc1"><Rotulo> I - </Rotulo><p>da educação;</p>
+        </Inciso>
+                  <Inciso id="art47_cpt_inc2"><Rotulo> II - </Rotulo><p>da cultura;</p>
+        </Inciso>
+                  <Inciso id="art47_cpt_inc3"><Rotulo> III - </Rotulo><p>da saúde pública;</p>
+        </Inciso>
+                  <Inciso id="art47_cpt_inc4"><Rotulo> IV - </Rotulo><p>da previdência;</p>
+        </Inciso>
+                  <Inciso id="art47_cpt_inc5"><Rotulo> V - </Rotulo><p>da ciência e tecnologia;</p>
+        </Inciso>
+                  <Inciso id="art47_cpt_inc6"><Rotulo> VI - </Rotulo><p>do meio ambiente; e</p>
+        </Inciso>
+                  <Inciso id="art47_cpt_inc7"><Rotulo> VII - </Rotulo><p>de mitigação e adaptação às mudanças climáticas.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art47_par1u"><Rotulo>Parágrafo único.</Rotulo><p>Os projetos e programas de que trata o caput observarão o Plano Plurianual - PPA, a Lei de Diretrizes Orçamentárias - LDO e as respectivas dotações consignadas na Lei Orçamentária Anual - LOA.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art48"><Rotulo>Art. 48.</Rotulo><Caput id="art48_cpt"><p>O FS tem por objetivos:</p>
+                  <Inciso id="art48_cpt_inc1"><Rotulo> I - </Rotulo><p>constituir poupança pública de longo prazo com base nas receitas auferidas pela União;</p>
+        </Inciso>
+                  <Inciso id="art48_cpt_inc2"><Rotulo> II - </Rotulo><p>oferecer fonte de recursos para o desenvolvimento social e regional, na forma prevista no art. 47; e</p>
+        </Inciso>
+                  <Inciso id="art48_cpt_inc3"><Rotulo> III - </Rotulo><p>mitigar as flutuações de renda e de preços na economia nacional, decorrentes das variações na renda gerada pelas atividades de produção e exploração de petróleo e de outros recursos não renováveis.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art48_par1u"><Rotulo>Parágrafo único.</Rotulo><p>É vedado ao FS, direta ou indiretamente, conceder garantias.</p>
+        </Paragrafo>
+      </Artigo>
+    </Secao>
+              <Secao id="cap7_sec2"><Rotulo>Seção II</Rotulo><NomeAgrupador>Dos Recursos do FS </NomeAgrupador>
+                 <Artigo id="art49"><Rotulo>Art. 49.</Rotulo><Caput id="art49_cpt"><p>Constituem recursos do FS:</p>
+                  <Inciso id="art49_cpt_inc1"><Rotulo> I - </Rotulo><p>parcela do valor do bônus de assinatura destinada ao FS pelos contratos de partilha de produção;</p>
+        </Inciso>
+                  <Inciso id="art49_cpt_inc2"><Rotulo> II - </Rotulo><p>parcela dos royalties que cabe à União, deduzidas aquelas destinadas aos seus órgãos específicos, conforme estabelecido nos contratos de partilha da produção, na forma do regulamento;</p>
+        </Inciso>
+                  <Inciso id="art49_cpt_inc3"><Rotulo> III - </Rotulo><p>receita advinda da comercialização de petróleo, de gás natural e de outros hidrocarbonetos fluidos da União, conforme definido em lei;</p>
+        </Inciso>
+                  <Inciso id="art49_cpt_inc4"><Rotulo> IV - </Rotulo><p>os royalties e a participação especial dos blocos do pré-sal já licitados destinados à administração direta da União, observado o disposto nos §§ 1º e 2º deste artigo;</p>
+        </Inciso>
+                  <Inciso id="art49_cpt_inc5"><Rotulo> V - </Rotulo><p>os resultados de aplicações financeiras sobre suas disponibilidades; e</p>
+        </Inciso>
+                  <Inciso id="art49_cpt_inc6"><Rotulo> VI - </Rotulo><p>outros recursos destinados ao FS por lei.</p>
+        </Inciso>
+        </Caput>
+                  <Paragrafo id="art49_par1"><Rotulo>§ 1º</Rotulo><p>A Lei nº 9.478, de 6 de agosto de 1997, passa a vigorar com as seguintes alterações:</p>
+        </Paragrafo>
+                  <Paragrafo id="art49_par2"><Rotulo>§ 2º</Rotulo><p>O cumprimento do disposto no § 1º deste artigo obedecerá à regra de transição, a critério do Poder Executivo, estabelecida na forma do regulamento.</p>
+        </Paragrafo>
+      </Artigo>
+    </Secao>
+              <Secao id="cap7_sec3"><Rotulo>Seção III</Rotulo><NomeAgrupador>Da Política de Investimentos do FS </NomeAgrupador>
+                 <Artigo id="art50"><Rotulo>Art. 50.</Rotulo><Caput id="art50_cpt"><p>A política de investimento do FS tem por objetivo buscar a rentabilidade, a segurança e a liquidez de suas aplicações e assegurar sua sustentabilidade econômica e financeira para o cumprimento das finalidades definidas nos arts. 47 e 48.</p>
+        </Caput>
+                  <Paragrafo id="art50_par1u"><Rotulo>Parágrafo único.</Rotulo><p>Os investimentos e aplicações do FS serão destinados preferencialmente a ativos no exterior, com a finalidade de mitigar a volatilidade de renda e de preços na economia nacional.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art51"><Rotulo>Art. 51.</Rotulo><Caput id="art51_cpt"><p>Os recursos do FS para aplicação nos programas e projetos a que se refere o art. 1º deverão ser os resultantes do retorno sobre o capital.</p>
+        </Caput>
+                  <Paragrafo id="art51_par1u"><Rotulo>Parágrafo único.</Rotulo><p>Constituído o FS e garantida a sua sustentabilidade econômica e financeira, o Poder Executivo, na forma da lei, poderá propor o uso de percentual de recursos do principal para a aplicação nas finalidades previstas no art. 47, na etapa inicial de formação de poupança do fundo.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art52"><Rotulo>Art. 52.</Rotulo><Caput id="art52_cpt"><p>A política de investimentos do FS será definida pelo Comitê de Gestão Financeira do Fundo Social - CGFFS.</p>
+        </Caput>
+                  <Paragrafo id="art52_par1"><Rotulo>§ 1º</Rotulo><p>O CGFFS terá sua composição e funcionamento estabelecidos em ato do Poder Executivo, assegurada a participação do Ministro de Estado da Fazenda, do Ministro de Estado do Planejamento, Orçamento e Gestão e do Presidente do Banco Central do Brasil.</p>
+        </Paragrafo>
+                  <Paragrafo id="art52_par2"><Rotulo>§ 2º</Rotulo><p>Aos membros do CGFFS não cabe qualquer tipo de remuneração pelo desempenho de suas funções.</p>
+        </Paragrafo>
+                  <Paragrafo id="art52_par3"><Rotulo>§ 3º</Rotulo><p>As despesas relativas à operacionalização do CGFFS serão custeadas pelo FS.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art53"><Rotulo>Art. 53.</Rotulo><Caput id="art53_cpt"><p>Cabe ao CGFFS definir:</p>
+                  <Inciso id="art53_cpt_inc1"><Rotulo> I - </Rotulo><p>o montante a ser, anualmente, resgatado do FS, assegurada sua sustentabilidade financeira;</p>
+        </Inciso>
+                  <Inciso id="art53_cpt_inc2"><Rotulo> II - </Rotulo><p>a rentabilidade mínima esperada;</p>
+        </Inciso>
+                  <Inciso id="art53_cpt_inc3"><Rotulo> III - </Rotulo><p>o tipo e o nível de risco que poderão ser assumidos na realização dos investimentos, bem como as condições para que o nível de risco seja minimizado;</p>
+        </Inciso>
+                  <Inciso id="art53_cpt_inc4"><Rotulo> IV - </Rotulo><p>os percentuais, mínimo e máximo, de recursos a serem investidos no Exterior e no País;</p>
+        </Inciso>
+                  <Inciso id="art53_cpt_inc5"><Rotulo> V - </Rotulo><p>a capitalização mínima a ser atingida antes de qualquer transferência para as finalidades e os objetivos definidos nesta Lei.</p>
+        </Inciso>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art54"><Rotulo>Art. 54.</Rotulo><Caput id="art54_cpt"><p>A União, a critério do CGFFS, poderá contratar instituições financeiras federais para atuarem como agentes operadores do FS, as quais farão jus a remuneração pelos serviços prestados.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art55"><Rotulo>Art. 55.</Rotulo><Caput id="art55_cpt"><p>A União poderá participar, com recursos do FS, como cotista única, de fundo de investimento específico.</p>
+        </Caput>
+                  <Paragrafo id="art55_par1u"><Rotulo>Parágrafo único.</Rotulo><p>O fundo de investimento específico de que trata este artigo deve ser constituído por instituição financeira federal, observadas as normas a que se refere o inciso XXII do art. 4º da Lei nº 4.595, de 31 de dezembro de 1964.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art56"><Rotulo>Art. 56.</Rotulo><Caput id="art56_cpt"><p>O fundo de investimento de que trata o art. 55 deverá ter natureza privada, patrimônio próprio separado do patrimônio do cotista e do administrador, sujeitando-se a direitos e obrigações próprias.</p>
+        </Caput>
+                  <Paragrafo id="art56_par1"><Rotulo>§ 1º</Rotulo><p>A integralização das cotas do fundo de investimento será autorizada em ato do Poder Executivo, ouvido o CGFFS.</p>
+        </Paragrafo>
+                  <Paragrafo id="art56_par2"><Rotulo>§ 2º</Rotulo><p>O fundo de investimento terá por finalidade promover a aplicação em ativos no Brasil e no exterior.</p>
+        </Paragrafo>
+                  <Paragrafo id="art56_par3"><Rotulo>§ 3º</Rotulo><p>O fundo de investimento responderá por suas obrigações com os bens e direitos integrantes de seu patrimônio, ficando o cotista obrigado somente pela integralização das cotas que subscrever.</p>
+        </Paragrafo>
+                  <Paragrafo id="art56_par4"><Rotulo>§ 4º</Rotulo><p>A dissolução do fundo de investimento dar-se-á na forma de seu estatuto, e seus recursos retornarão ao FS.</p>
+        </Paragrafo>
+                  <Paragrafo id="art56_par5"><Rotulo>§ 5º</Rotulo><p>Sobre as operações de crédito, câmbio e seguro e sobre rendimentos e lucros do fundo de investimento não incidirá nenhum imposto ou contribuição social de competência da União.</p>
+        </Paragrafo>
+                  <Paragrafo id="art56_par6"><Rotulo>§ 6º</Rotulo><p>O fundo de investimento deverá elaborar os demonstrativos contábeis de acordo com a legislação em vigor e conforme o estabelecido no seu estatuto.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art57"><Rotulo>Art. 57.</Rotulo><Caput id="art57_cpt"><p>O estatuto do fundo de investimento definirá, inclusive, as políticas de aplicação, critérios e níveis de rentabilidade e de risco, questões operacionais da gestão administrativa e financeira e regras de supervisão prudencial de investimentos.</p>
+        </Caput>
+      </Artigo>
+    </Secao>
+              <Secao id="cap7_sec4"><Rotulo>Seção IV</Rotulo><NomeAgrupador>Da Gestão do FS </NomeAgrupador>
+                 <Artigo id="art58"><Rotulo>Art. 58.</Rotulo><Caput id="art58_cpt"><p>Fica criado o Conselho Deliberativo do Fundo Social - CDFS, com a atribuição de propor ao Poder Executivo, ouvidos os Ministérios afins, a prioridade e a destinação dos recursos resgatados do FS para as finalidades estabelecidas no art. 47, observados o PPA, a LDO e a LOA.</p>
+        </Caput>
+                  <Paragrafo id="art58_par1"><Rotulo>§ 1º</Rotulo><p>A composição, as competências e o funcionamento do CDFS serão estabelecidos em ato do Poder Executivo.</p>
+        </Paragrafo>
+                  <Paragrafo id="art58_par2"><Rotulo>§ 2º</Rotulo><p>Aos membros do CDFS não cabe qualquer tipo de remuneração pelo desempenho de suas funções.</p>
+        </Paragrafo>
+                  <Paragrafo id="art58_par3"><Rotulo>§ 3º</Rotulo><p>A destinação de recursos para os programas e projetos definidos como prioritários pelo CDFS fica condicionada à prévia fixação de metas, prazo de execução e planos de avaliação, em coerência com as disposições estabelecidas no PPA.</p>
+        </Paragrafo>
+                  <Paragrafo id="art58_par4"><Rotulo>§ 4º</Rotulo><p>O CDFS deverá submeter os programas e projetos a criteriosa avaliação quantitativa e qualitativa durante todas as fases de execução, monitorando os impactos efetivos sobre a população e nas regiões de intervenção, com o apoio de instituições públicas e universitárias de pesquisa.</p>
+        </Paragrafo>
+                  <Paragrafo id="art58_par5"><Rotulo>§ 5º</Rotulo><p>Os recursos do FS destinados aos programas e projetos de que trata o art. 47 devem observar critérios de redução das desigualdades regionais.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art59"><Rotulo>Art. 59.</Rotulo><Caput id="art59_cpt"><p>As demonstrações contábeis e os resultados das aplicações do FS serão elaborados e apurados semestralmente, nos termos previstos pelo órgão central de contabilidade de que trata o inciso I do art. 17 da Lei nº 10.180, de 6 de fevereiro de 2001.</p>
+        </Caput>
+                  <Paragrafo id="art59_par1u"><Rotulo>Parágrafo único.</Rotulo><p>Ato do Poder Executivo definirá as regras de supervisão do FS, sem prejuízo da fiscalização dos entes competentes.</p>
+        </Paragrafo>
+      </Artigo>
+                 <Artigo id="art60"><Rotulo>Art. 60.</Rotulo><Caput id="art60_cpt"><p>O Poder Executivo encaminhará trimestralmente ao Congresso Nacional relatório de desempenho do FS, conforme disposto em regulamento do Fundo.</p>
+        </Caput>
+      </Artigo>
+    </Secao>
+    </Capitulo>
+              <Capitulo id="cap8"><Rotulo>CAPÍTULO VIII</Rotulo><NomeAgrupador>DISPOSIÇÕES FINAIS E TRANSITÓRIAS </NomeAgrupador>
+                 <Artigo id="art61"><Rotulo>Art. 61.</Rotulo><Caput id="art61_cpt"><p>Aplicam-se às atividades de exploração, avaliação, desenvolvimento e produção de que trata esta Lei os regimes aduaneiros especiais e os incentivos fiscais aplicáveis à indústria de petróleo no Brasil.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art62"><Rotulo>Art. 62.</Rotulo><Caput id="art62_cpt"><p>A Lei nº 9.478, de 6 de agosto de 1997, passa a vigorar com as seguintes alterações:</p>
+                  <Alteracao id="art62_cpt_alt" xml:base="urn:lex:br:federal:lei:9478;1997-08-06">
+                    <Artigo id="art62_cpt_alt1_art2" abreAspas="s"><Rotulo>Art. 2º</Rotulo><Caput id="art62_cpt_alt1_art2_cpt" textoOmitido="s">
+                      <Omissis id="art62_cpt_alt1_art2_cpt_omi1"/>
+                      <Inciso id="art62_cpt_alt1_art2_cpt_inc8"><Rotulo>VIII -</Rotulo><p>definir os blocos a serem objeto de concessão ou partilha de produção;</p></Inciso>
+                      <Inciso id="art62_cpt_alt1_art2_cpt_inc9"><Rotulo>IX -</Rotulo><p>definir a estratégia e a política de desenvolvimento econômico e tecnológico da indústria de petróleo, de gás natural e de outros hidrocarbonetos fluidos, bem como da sua cadeia de suprimento;</p></Inciso>
+                      <Inciso id="art62_cpt_alt1_art2_cpt_inc10" fechaAspas="s" notaAlteracao="NR"><Rotulo>X -</Rotulo><p>induzir o incremento dos índices mínimos de conteúdo local de bens e serviços, a serem observados em licitações e contratos de concessão e de partilha de produção, observado o disposto no inciso IX.</p></Inciso>
+                    </Caput>
+                    </Artigo>
+
+                    <Artigo id="art62_cpt_alt1_art5" abreAspas="s" fechaAspas="s" notaAlteracao="NR"><Rotulo>Art. 5º</Rotulo><Caput id="art62_cpt_alt1_art5_cpt"><p>As atividades econômicas de que trata o art. 4º desta Lei serão reguladas e fiscalizadas pela União e poderão ser exercidas, mediante concessão, autorização ou contratação sob o regime de partilha de produção, por empresas constituídas sob as leis brasileiras, com sede e administração no País.</p></Caput></Artigo>
+
+                    <Artigo id="art62_cpt_alt1_art8" abreAspas="s"><Rotulo>Art. 8º</Rotulo><Caput id="art62_cpt_alt1_art8_cpt" textoOmitido="s">
+                      <Omissis id="art62_cpt_alt1_art8_cpt_omi1"/>
+                      <Inciso id="art62_cpt_alt1_art8_cpt_inc2" fechaAspas="s" notaAlteracao="NR"><Rotulo>II -</Rotulo><p>promover estudos visando à delimitação de blocos, para efeito de concessão ou contratação sob o regime de partilha de produção das atividades de exploração, desenvolvimento e produção;</p></Inciso>
+                    </Caput>
+                    <Omissis id="art62_cpt_alt1_art8_omi1"/>
+                    </Artigo>
+
+                    <Artigo id="art62_cpt_alt1_art21" abreAspas="s" fechaAspas="s" notaAlteracao="NR"><Rotulo>Art. 21.</Rotulo><Caput id="art62_cpt_alt1_art21_cpt"><p>Todos os direitos de exploração e produção de petróleo, de gás natural e de outros hidrocarbonetos fluidos em território nacional, nele compreendidos a parte terrestre, o mar territorial, a plataforma continental e a zona econômica exclusiva, pertencem à União, cabendo sua administração à ANP, ressalvadas as competências de outros órgãos e entidades expressamente estabelecidas em lei.</p></Caput></Artigo>
+
+                    <Artigo id="art62_cpt_alt1_art22" abreAspas="s"><Rotulo>Art. 22.</Rotulo><Caput id="art62_cpt_alt1_art22_cpt" textoOmitido="s">
+                        <Alinea id="art62_cpt_alt1_art22_cpt_ali1"><Rotulo>a) </Rotulo><p>Testando alínea em caput dentro de alteração.</p></Alinea>
+                      </Caput>
+                    <Omissis id="art62_cpt_alt1_art22_omi1"/>
+                    <Paragrafo id="art62_cpt_alt1_art22_par3"><Rotulo>§ 3º</Rotulo><p>O Ministério de Minas e Energia terá acesso irrestrito e gratuito ao acervo a que se refere o caput deste artigo, com o objetivo de realizar estudos e planejamento setorial, mantido o sigilo a que esteja submetido, quando for o caso.</p></Paragrafo>
+                    <Omissis id="art62_cpt_alt1_art22_omi2" fechaAspas="s" notaAlteracao="NR"/>
+                    </Artigo>
+
+                    <Secao id="art62_cpt_alt1_sec1" abreAspas="s"><Rotulo>Seção I</Rotulo><NomeAgrupador>Sobre qualquer coisa</NomeAgrupador>
+                        <Omissis id="art62_cpt_alt1_sec1_omi1" fechaAspas="s" notaAlteracao="NR"/>
+                    </Secao>
+                 </Alteracao>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art63"><Rotulo>Art. 63.</Rotulo><Caput id="art63_cpt"><p>Enquanto não for criada a empresa pública de que trata o § 1º do art. 8º, suas competências serão exercidas pela União, por intermédio da ANP, podendo ainda ser delegadas por meio de ato do Poder Executivo.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art64"><Rotulo>Art. 64.</Rotulo><Caput id="art64_cpt"><p>Até que seja publicada legislação específica para o regime de partilha de produção, o pagamento dos royalties devidos pelo contratado sob o regime de partilha de produção observará o disposto nas Leis nos 7.990, de 28 de dezembro de 1989, e 9.478, de 1997.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art65"><Rotulo>Art. 65.</Rotulo><Caput id="art65_cpt"><p>O Poder Executivo regulamentará o disposto nesta Lei.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art66"><Rotulo>Art. 66.</Rotulo><Caput id="art66_cpt"><p>Esta Lei entra em vigor na data de sua publicação.</p>
+        </Caput>
+      </Artigo>
+                 <Artigo id="art67"><Rotulo>Art. 67.</Rotulo><Caput id="art67_cpt"><p>Ficam revogados o § 1º do art. 23 e o art. 27 da Lei nº 9.478, de 6 de agosto de 1997.</p>
+              <!--  em estudos   <Revogacao id="art67_cpt_alt"  xlink:href="urn:lex:....">
+                    <Paragrafo id="art67_cpt_alt1_art23_par1" revogado="true"/>
+                    <Artigo id="art67_cpt_alt1_art27" revogado="true"/>
+                 </Revogacao>  -->
+        </Caput>
+      </Artigo>
+    </Capitulo>
+    </Articulacao>
+  </Norma>
+ </ProjetoNorma>
+</LexML>

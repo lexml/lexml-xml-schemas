@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmendaProposicao xmlns="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0 ../xsd/lexml-emenda-proposicao.xsd">
+  <MetadadoEmenda>
+    <Propriedades>
+      <Descricao></Descricao>
+      <Elaborador>jholanda</Elaborador>
+      <Concluida>0</Concluida>
+      <Observacao></Observacao>
+      <Situacao>Emenda Inválida</Situacao>
+    </Propriedades>
+  </MetadadoEmenda>
+  <Emenda id='emd'>
+    <Proposicao URN='urn:lex:br:congresso.nacional:medida.provisoria:2005-04-04;244:@200504040101'>MPV 244/2005</Proposicao>
+    <Marcadores>
+      <DispositivosImportados></DispositivosImportados>
+      <DispositivosSuprimidos></DispositivosSuprimidos>
+      <DispositivosModificados>
+        <Modificacao id='mod1' parteProposicao='Texto'>
+          <Inciso id="art2_cpt_inc1">
+            <Rotulo>I -</Rotulo>
+              <p> partilha de produ&#231;&#227;o: regime de explora&#231;&#227;o e produ&#231;&#227;o de
+                petr&#243;leo, de g&#225;s natural e de outros hidrocarbonetos fluidos no qual o contratado exerce,
+                psadsadsadsaor sua conta e risco, as atividades de explora&#231;&#227;o, avalia&#231;&#227;o,
+                desenvolvimento e produ&#231;&#227;o e, em caso de descoberta comercial, adquire o direito &#224;
+                apropria&#231;&#227;o do custo em &#243;leo, do volume da produ&#231;&#227;o correspondente aos
+                royalties devidos, bem como de parcela do excedente em &#243;leo, na propor&#231;&#227;o,
+                condi&#231;&#245;es e prazos estabelecidos em contrato; </p>
+          </Inciso>
+        </Modificacao>
+        <Modificacao id='mod2' parteProposicao='Texto'>
+          <Inciso id="art2_cpt_inc2">
+            <Rotulo>II -</Rotulo>
+              <p> custo em &#243;leo: parcela da produ&#231;&#227;o de petr&#243;leo, de g&#225;s natural e de
+                outros hidrocarbonetos fluidos, exig&#237;vel unicamente em caso de descoberta comercial,
+                correspondente aos custos e sadsadsasdadsaos investimentos realizados pelo contratado na
+                execu&#231;&#227;o das atividades de explora&#231;&#227;o, avalia&#231;&#227;o, desenvolvimento,
+                produ&#231;&#227;o e desativa&#231;&#227;o das instala&#231;&#245;es, sujeita a limites, prazos e
+                condi&#231;&#245;es estabelecidos em contrato; </p>
+          </Inciso>
+        </Modificacao>
+        <Modificacao id='mod3' parteProposicao='Texto'>
+          <Inciso id="art2_cpt_inc3">
+            <Rotulo>III -</Rotulo>
+              <p> excedente em &#243;leo: parcela da produ&#231;&#227;o de petr&#243;leo, de g&#225;s natural e de
+                outros hidrocarbonetos fluidos a ser repartida entre a Uni&#227;o e o contratado, segundo
+                crsdsadsadsadit&#233;rios definidos em contrato, resultante da diferen&#231;a entre o volume total
+                da produ&#231;&#227;o e as parcelas relativas ao custo em &#243;leo, aos royalties devidos e,
+                quando exig&#237;vel, &#224; participa&#231;&#227;o de que trata o art. 43; </p>
+          </Inciso>
+        </Modificacao>
+        <Modificacao id='mod4' parteProposicao='Texto'>
+          <Inciso id="art2_cpt_inc9">
+            <Rotulo>IX -</Rotulo>
+              <p> individualiza&#231;&#227;o da produ&#231;&#227;o: procedimento que visa &#224; divis&#227;o do
+                resultado da produ&#231;&#227;o e ao aproveitamento racional dos recursos naturais da Uni&#227;o,
+                por meio da unifica&#231;&#227;osadsadsadsa do desenvolvimento e da produ&#231;&#227;o relativos
+                &#224; jazida que se estenda al&#233;m do bloco concedido ou contratado sob o regime de partilha de
+                produ&#231;&#227;o; </p>
+          </Inciso>
+        </Modificacao>
+      </DispositivosModificados>
+      <DispositivosAdicionados></DispositivosAdicionados>
+    </Marcadores>
+    <Justificativa id='emd1_jus'></Justificativa>
+    <ComandoEmenda id="emd_cmd1" tipoComando="complexo" acaoComando="alteracao">
+      <p>Dê-se ao Art. 2º a seguinte redação:</p>
+      <Citacao>
+        <Aspas>
+          <Artigo>
+            <Caput>
+              <Omissis>
+                <Rotulo>Art. 2º</Rotulo>
+              </Omissis>
+              <Inciso refid='mod1'></Inciso>
+              <Inciso refid='mod2'></Inciso>
+              <Inciso refid='mod3'></Inciso>
+              <Omissis></Omissis>
+              <Inciso refid='mod4'></Inciso>
+              <Omissis></Omissis>
+            </Caput>
+          </Artigo>
+        </Aspas>
+        (NR)
+      </Citacao>
+    </ComandoEmenda>
+  </Emenda>
+</EmendaProposicao>

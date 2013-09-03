@@ -1,0 +1,180 @@
+<LexML xsi:schemaLocation="http://www.lexml.gov.br/1.0 ../xsd/lexml-br-rigido.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.lexml.gov.br/1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<!--       xsi:schemaLocation="http://www.lexml.gov.br/1.0 http://projeto.lexml.gov.br/esquemas/lexml-br-rigido.xsd"> -->
+			<Metadado>
+           <Identificacao URN="urn:lex:br:senado.federal:projeto.lei;plc:2010-01-01;1"/>
+         </Metadado>
+			<ProjetoNorma>
+				<Norma>
+				<ParteInicial>
+            <Epigrafe id="epigrafe">PROJETO DE LEI DA CÃ‚MARA DOS DEPUTADOS NÂº 92 DE 1 DE JANEIRO DE 2010</Epigrafe>
+            <Ementa id="ementa">DispÃµe sobre a identificaÃ§Ã£o, rotulagem e padrÃµes de qualidade da Ã¡gua adicionada de sais e da Ã¡gua adicionada de vitaminas e minerais destinadas ao consumo humano.</Ementa>
+            <Preambulo id="preambulo"><p>O CONGRESSO NACIONAL decreta:</p></Preambulo>
+        </ParteInicial>
+				<Articulacao><Artigo id="art1">
+						<Rotulo>Art. 1Âº</Rotulo>
+
+						<Caput id="art1_cpt">
+
+						<p>Esta Lei estabelece os parÃ¢metros de identidade, rotulagem e de qualidade da Ã¡gua adicionada de sais e da Ã¡gua adicionada de vitaminas e minerais, destinadas ao consumo humano.</p>
+
+					</Caput>
+					</Artigo><Artigo id="art2">
+						<Rotulo>Art. 2Âº</Rotulo>
+
+						<Caput id="art2_cpt">
+
+						<p>Para sua produÃ§Ã£o e comercializaÃ§Ã£o, as Ã¡guas de que trata esta Lei sÃ£o designadas como Ã¡gua adicionada de sais e Ã¡gua adicionada de vitaminas e minerais.</p>
+
+					</Caput><Paragrafo id="art2_par1">
+						<Rotulo>Â§ 1Âº</Rotulo>
+						<p>Entende-se como Ã¡gua adicionada de sais aquela preparada artificialmente a partir de qualquer fonte de captaÃ§Ã£o, que passa por tratamento e por adiÃ§Ã£o de sais de uso permitido.</p>
+
+					</Paragrafo><Paragrafo id="art2_par2">
+						<Rotulo>Â§ 2Âº</Rotulo>
+						<p>Entende-se por Ã¡gua adicionada de vitaminas e minerais aquela preparada artificialmente a partir de qualquer fonte de captaÃ§Ã£o, que passa por tratamento e adiÃ§Ã£o de vitaminas e minerais de uso permitido.</p>
+
+					</Paragrafo>
+					</Artigo><Artigo id="art3">
+						<Rotulo>Art. 3Âº</Rotulo>
+
+						<Caput id="art3_cpt">
+
+						<p>A Ã¡gua adicionada de sais pode ser gaseificada mediante a dissoluÃ§Ã£o de diÃ³xido de carbono de padrÃ£o alimentÃ­cio.</p>
+
+					</Caput>
+					</Artigo><Artigo id="art4">
+						<Rotulo>Art. 4Âº</Rotulo>
+
+						<Caput id="art4_cpt">
+
+						<p>A Ã¡gua utilizada para a produÃ§Ã£o da Ã¡gua adicionada de sais e da Ã¡gua adicionada de vitaminas e minerais deve:</p>
+						<Inciso id="art4_cpt_inc1">
+						<Rotulo>I â€“</Rotulo>
+						<p>atender aos parÃ¢metros fÃ­sicos, quÃ­micos, bacteriolÃ³gicos e organolÃ©pticos exigidos para Ã¡gua potÃ¡vel, de acordo com o estabelecido pelo MinistÃ©rio da SaÃºde;</p>
+
+					</Inciso><Inciso id="art4_cpt_inc2">
+						<Rotulo>II â€“</Rotulo>
+						<p>passar por processo complementar de purificaÃ§Ã£o que elimine todos os resÃ­duos de cloro provenientes do tratamento pÃºblico ou ao que for submetida.</p>
+
+					</Inciso>
+					</Caput>
+					</Artigo><Artigo id="art5">
+						<Rotulo>Art. 5Âº</Rotulo>
+
+						<Caput id="art5_cpt">
+
+						<p>A Ã¡gua adicionada de sais e a Ã¡gua adicionada de vitaminas e minerais envasadas para comercializaÃ§Ã£o devem atender a todos os requisitos fÃ­sico-quÃ­micos e bacteriolÃ³gicos estabelecidos pela legislaÃ§Ã£o e normas tÃ©cnicas para a Ã¡gua potÃ¡vel.</p>
+
+					</Caput>
+					</Artigo><Artigo id="art6">
+						<Rotulo>Art. 6Âº</Rotulo>
+
+						<Caput id="art6_cpt">
+
+						<p>Nos rÃ³tulos das embalagens de Ã¡gua adicionada de sais e de Ã¡gua adicionada de vitaminas e minerais, devem constar, pelo menos:</p>
+						<Inciso id="art6_cpt_inc1">
+						<Rotulo>I â€“</Rotulo>
+						<p>a designaÃ§Ã£o â€œÃGUA ADICIONADA DE SAISâ€ ou â€œÃGUA ADICIONADA DE VITAMINAS E MINERAISâ€, em caracteres com tamanho mÃ­nimo de metade dos caracteres utilizados para grafar a marca do produto;</p>
+
+					</Inciso><Inciso id="art6_cpt_inc2">
+						<Rotulo>II â€“</Rotulo>
+						<p>a relaÃ§Ã£o das substÃ¢ncias quÃ­micas adicionadas Ã  Ã¡gua, em ordem decrescente de concentraÃ§Ã£o, com as respectivas concentraÃ§Ãµes em miligramas por litro;</p>
+
+					</Inciso><Inciso id="art6_cpt_inc3">
+						<Rotulo>III â€“</Rotulo>
+						<p>a expressÃ£o â€œnÃ£o gaseificadaâ€ ou â€œgaseificada artificialmenteâ€, conforme seja o caso;</p>
+
+					</Inciso><Inciso id="art6_cpt_inc4">
+						<Rotulo>IV â€“</Rotulo>
+						<p>a origem da Ã¡gua utilizada para produÃ§Ã£o, explicitando o manancial ou a rede pÃºblica de abastecimento ou ambos, conforme o caso;</p>
+
+					</Inciso><Inciso id="art6_cpt_inc5">
+						<Rotulo>V â€“</Rotulo>
+						<p>os processos utilizados para purificaÃ§Ã£o complementar e desinfeÃ§Ã£o da Ã¡gua utilizada.</p>
+
+					</Inciso>
+					</Caput>
+					</Artigo><Artigo id="art7">
+						<Rotulo>Art. 7Âº</Rotulo>
+
+						<Caput id="art7_cpt">
+
+						<p>Ã‰ vedado, nos rÃ³tulos de embalagens de Ã¡gua adicionada de sais e de Ã¡gua adicionada de vitaminas e minerais, fazer:</p>
+						<Inciso id="art7_cpt_inc1">
+						<Rotulo>I â€“</Rotulo>
+						<p>a referÃªncia a fontes ou localidades onde se exploram ou foram exploradas fontes de Ã¡gua mineral;</p>
+
+					</Inciso><Inciso id="art7_cpt_inc2">
+						<Rotulo>II â€“</Rotulo>
+						<p>a correlaÃ§Ã£o do produto com marcas ou outros tipos de identificaÃ§Ã£o de Ã¡guas minerais comercializadas;</p>
+
+					</Inciso><Inciso id="art7_cpt_inc3">
+						<Rotulo>III â€“</Rotulo>
+						<p>outro tipo de identificaÃ§Ã£o do produto que nÃ£o o de Ã¡gua adicionada de sais ou Ã¡gua adicionada de vitaminas e minerais;</p>
+
+					</Inciso><Inciso id="art7_cpt_inc4">
+						<Rotulo>IV â€“</Rotulo>
+						<p>a indicaÃ§Ã£o de propriedades terapÃªuticas para o produto.</p>
+
+					</Inciso>
+					</Caput>
+					</Artigo><Artigo id="art8">
+						<Rotulo>Art. 8Âº</Rotulo>
+
+						<Caput id="art8_cpt">
+
+						<p>Todas as marcas e tipos de Ã¡gua adicionada de sais e de Ã¡gua adicionada de vitaminas e minerais para serem comercializadas devem sujeitar-se aos registros, controle de qualidade e fiscalizaÃ§Ã£o previstos para a indÃºstria de alimentos.</p>
+
+					</Caput>
+					</Artigo><Artigo id="art9">
+						<Rotulo>Art. 9Âº</Rotulo>
+
+						<Caput id="art9_cpt">
+
+						<p>As empresas que produzem ou comercializam Ã¡gua adicionada de sais tÃªm prazo de 1 (um) ano para se adequar aos requisitos desta Lei.</p>
+
+					</Caput>
+					</Artigo><Artigo id="art10">
+						<Rotulo>Art. 10.</Rotulo>
+
+						<Caput id="art10_cpt">
+
+						<p>A categoria Ã¡gua adicionada de vitaminas e minerais, criada por esta Lei, serÃ¡ regulamentada pela AgÃªncia Nacional de VigilÃ¢ncia SanitÃ¡ria - ANVISA no prazo de 6 (seis) meses da sua publicaÃ§Ã£o, observados, dentre outros, os seguintes parÃ¢metros:</p>
+						<Inciso id="art10_cpt_inc1">
+						<Rotulo>I â€“</Rotulo>
+						<p>os teores mÃ¡ximos de vitaminas e minerais a serem adicionados Ã  Ã¡gua nÃ£o deverÃ£o exceder aos limites definidos para os alimentos adicionados de nutrientes essenciais - alimentos enriquecidos;</p>
+
+					</Inciso><Inciso id="art10_cpt_inc2">
+						<Rotulo>II â€“</Rotulo>
+						<p>os nutrientes a serem utilizados na fabricaÃ§Ã£o da Ã¡gua devem estar presentes em concentraÃ§Ãµes que nÃ£o impliquem ingestÃ£o excessiva ou insignificante do nutriente adicionado, considerando as quantidades derivadas de outros alimentos da dieta e as necessidades do consumidor a que se destina;</p>
+
+					</Inciso><Inciso id="art10_cpt_inc3">
+						<Rotulo>III â€“</Rotulo>
+						<p>o teor de carboidratos da Ã¡gua adicionada de vitaminas e minerais nÃ£o poderÃ¡ exceder a 6% (seis por cento) em peso;</p>
+
+					</Inciso><Inciso id="art10_cpt_inc4">
+						<Rotulo>IV â€“</Rotulo>
+						<p>para sua fabricaÃ§Ã£o, podem ser empregados os aditivos alimentares, os coadjuvantes de tecnologia de fabricaÃ§Ã£o e outros ingredientes necessÃ¡rios para a adiÃ§Ã£o e ou estabilizaÃ§Ã£o do(s) nutriente(s), previsto(s) na legislaÃ§Ã£o pertinente.</p>
+
+					</Inciso>
+					</Caput>
+					</Artigo><Artigo id="art11">
+						<Rotulo>Art. 11.</Rotulo>
+
+						<Caput id="art11_cpt">
+
+						<p>As infraÃ§Ãµes ao que estabelece esta Lei serÃ£o punidas de acordo com o disposto na Lei nÂº 6.437, de 20 de agosto de 1977, sem prejuÃ­zo da aplicaÃ§Ã£o das sanÃ§Ãµes previstas na Lei nÂº 8.078, de 11 de setembro de 1990, em especial em seus arts. 56 a 80.</p>
+
+					</Caput>
+					</Artigo><Artigo id="art12">
+						<Rotulo>Art. 12.</Rotulo>
+
+						<Caput id="art12_cpt">
+
+						<p>Esta Lei entra em vigor na data da sua publicaÃ§Ã£o.</p>
+
+					</Caput>
+					</Artigo></Articulacao>
+				</Norma>
+			</ProjetoNorma>
+		</LexML>

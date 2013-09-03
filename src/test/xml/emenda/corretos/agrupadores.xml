@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmendaProposicao xmlns="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0 ../xsd/lexml-emenda-proposicao.xsd">
+  <MetadadoEmenda>
+    <Propriedades>
+      <Descricao></Descricao>
+      <Elaborador>fragomeni</Elaborador>
+      <Concluida>0</Concluida>
+      <Observacao></Observacao>
+      <Situacao>Emenda Inválida</Situacao>
+    </Propriedades>
+  </MetadadoEmenda>
+  <Emenda id='emd'>
+    <Proposicao URN='urn:lex:br:congresso.nacional:medida.provisoria:2005-04-04;244:@200504040101'>MPV 244/2005</Proposicao>
+    <Marcadores>
+      <DispositivosImportados></DispositivosImportados>
+      <DispositivosSuprimidos>
+        <Supressao id='sup1' parteProposicao='Texto'>
+          <Capitulo id='cap2'>
+            <Rotulo>CAPÍTULO 2</Rotulo>
+          </Capitulo>
+        </Supressao>
+        <Supressao id='sup2' parteProposicao='Texto'>
+          <Secao id='cap3_sec3'>
+            <Rotulo>SEÇÃO 3</Rotulo>
+          </Secao>
+        </Supressao>
+        <Supressao id='sup3' parteProposicao='Texto'>
+          <Subsecao id='cap3_sec6_sub2'>
+            <Rotulo>SUBSEÇÃO 2</Rotulo>
+          </Subsecao>
+        </Supressao>
+      </DispositivosSuprimidos>
+      <DispositivosModificados>
+        <Modificacao id='mod1' parteProposicao='Texto'>
+          <Ementa id="ementa">
+              Disp&#245;e sobre a explora&#231;&#227;o e a produ&#231;&#227;o de petr&#243;leo, de
+              g&#225;s natural, e de outros hidrocarbonetos fluidos, sob o regime de partilha de
+              produ&#231;&#227;o, em &#225;reas do pr&#233;-sal e em &#225;reas estrat&#233;gicas; altera
+              dispositivos da Lei n&#186; 9.478, de 6 de agosto de 1997; cria o Fundo Social - FS, disp&#245;e
+              sobre sua estrutura e fontes de recursos; e d&#225; outras provid&#234;ncias. xxxx
+          </Ementa>
+        </Modificacao>
+        <Modificacao id='mod2' parteProposicao='Texto'>
+          <Preambulo id="preambulo">
+            <p>O CONGRESSO NACIONAL decretaxxxx:</p>
+          </Preambulo>
+        </Modificacao>
+        <Modificacao id='mod3' parteProposicao='Texto'>
+          <Capitulo id="cap1">
+            <Rotulo>CAPÍTULO 1</Rotulo>
+            <NomeAgrupador>DISPOSI&#199;&#213;ES PRELIMINARESxxxx</NomeAgrupador>
+          </Capitulo>
+        </Modificacao>
+        <Modificacao id='mod4' parteProposicao='Texto'>
+          <Secao id="cap3_sec2">
+            <Rotulo>SEÇÃO 2</Rotulo>
+            <NomeAgrupador>Das Compet&#234;ncias do Conselho Nacional de Pol&#237;tica Energ&#233;tica - CNPExxx
+            </NomeAgrupador>
+          </Secao>
+        </Modificacao>
+        <Modificacao id='mod5' parteProposicao='Texto'>
+          <Subsecao id="cap3_sec6_sub1">
+            <Rotulo>SUBSEÇÃO 1</Rotulo>
+            <NomeAgrupador>Do Edital de Licita&#231;&#227;oxxx</NomeAgrupador>
+          </Subsecao>
+        </Modificacao>
+      </DispositivosModificados>
+      <DispositivosAdicionados></DispositivosAdicionados>
+    </Marcadores>
+    <Justificativa id='emd1_jus'></Justificativa>
+  </Emenda>
+</EmendaProposicao>

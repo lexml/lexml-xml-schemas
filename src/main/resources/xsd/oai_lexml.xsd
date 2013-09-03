@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lexml="http://www.lexml.gov.br/oai_lexml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://www.lexml.gov.br/oai_lexml" elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="PT">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+    <xs:element name="LexML" type="lexml:LexMLType">
+        <xs:annotation>
+            <xs:documentation>
+                XML Schema for the OAI LexML Standard
+                Standard Version 1.0, 2008-12-13
+
+                João Oliveira
+                Prodasen
+
+                History:
+                2013-05-27: adiciona campos específicos de doutrina (laurocesar)
+                2011-11-28: atributo nota no Item para casos em de tipo="conteudo.indisponivel"
+                2011-11-02: application/vnd.ms-excel mime type added
+                2008-08-25: openoffice2 and and Sun StarOffice8 mime types added
+                2008-08-24: allowing tags p,b,i,u,s,sup,sub inside Ementa,
+                tag Item is now optional and unbounded
+                2008-08-13 release: v0.7
+
+                References:
+                - Formato de Item utiliza mime-type: http://www.iana.org/assignments/media-types/
+                - Códigos Idiomas: http://www.ietf.org/rfc/rfc3066.txt
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="LexMLType">
+        <xs:annotation>
+            <xs:documentation>
+                Cada instância deste elemento corresponde a um Item que poderá ser relacionado
+                a um identificador de documento (principal ou anexo) e a outros identificadores (publicação oficial,
+                sucesso lógico, equivalente a).
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>URL do Item com atributo Formato (subconjunto dos valores da tabela de mime-types) </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:anyURI">
+                            <xs:attributeGroup ref="lexml:ItemAtributeGroup"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="DocumentoIndividual" type="lexml:DocumentoIndividualType">
+                <xs:annotation>
+                    <xs:documentation>URN no padrão URN LexML
+                        Informar a URN do documento individual contido no Item.
+                        No caso do Item conter mais de um documento individual, deve-se gerar um registro para cada um.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Epigrafe" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Apelido" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Ementa" type="lexml:CampoTextoComTagsComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Indexacao" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Catalogo" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            
+            <!-- Campos específicos de doutrina -->
+            <xs:element name="DoutrinaAutor" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaTitulo" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaForma" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaLingua" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaAno" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaResponsabilidade" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaClasse" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaImprenta" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaEdicao" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaDescricaoFisica" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaISBN" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaOculto" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            
+            
+            <xs:element name="Relacionamento" type="lexml:RelacionamentoType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>URN no padrão URN LexML adicionada de atributo TipoRelacionamento para indicar se é uma "publicacao.oficial", "sucessor.logico.de" ou "equivalente.a"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            
+            
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RelacionamentoType">
+        <xs:simpleContent>
+            <xs:extension base="lexml:URNType">
+                <xs:attribute name="tipo" type="lexml:TipoRelacionamentoType"/>
+                <xs:attribute name="idPublicador" type="lexml:idPublicador"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CampoTextoComIdiomaType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>Campo Texto com atributo de idioma default</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" default="pt-BR"/>
+            </xs:extension>
+            <!--xs:attribute ref="xml:lang" use="optional" default="pt-BR"/-->
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CampoTextoComTagsComIdiomaType" abstract="false" block="extension" mixed="true">
+        <xs:annotation>
+            <xs:documentation>Campo Texto e algumas tags html, com atributo de idioma default</xs:documentation>
+        </xs:annotation>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="s" type="lexml:CampoTextoComTagsComIdiomaType"/>
+            <xs:element name="u" type="lexml:CampoTextoComTagsComIdiomaType"/>
+            <xs:element name="b" type="lexml:CampoTextoComTagsComIdiomaType"/>
+            <xs:element name="p" type="lexml:CampoTextoComTagsComIdiomaType"/>
+            <xs:element name="i" type="lexml:CampoTextoComTagsComIdiomaType"/>
+            <xs:element name="sup" type="lexml:CampoTextoComTagsComIdiomaType"/>
+            <xs:element name="sub" type="lexml:CampoTextoComTagsComIdiomaType"/>
+        </xs:choice>
+        <xs:attributeGroup ref="lexml:IdiomaAtributeGroup"/>
+    </xs:complexType>
+    <xs:complexType name="DocumentoIndividualType">
+        <xs:complexContent>
+            <xs:extension base="lexml:URNType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="URNType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>Tipo URN</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="lexml:REGEXURNType"/>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:attributeGroup name="IdiomaAtributeGroup">
+        <xs:attribute ref="xml:lang" use="optional" default="pt-BR"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="ItemAtributeGroup">
+        <xs:attribute name="tipo" type="lexml:TipoItemType" use="optional" default="conteudo"/>
+        <xs:attribute name="formato" type="lexml:FormatoIdentificadorItemType" use="optional"/>
+        <xs:attribute name="idPublicador" type="lexml:idPublicador" use="required"/>
+        <xs:attribute name="qtdPaginas" type="xs:integer" use="optional"/>
+        <xs:attribute name="nota" type="xs:string" use="optional"/>
+    </xs:attributeGroup>
+    <xs:simpleType name="FormatoIdentificadorItemType">
+        <xs:annotation>
+            <xs:documentation>Subconjunto mais frequente de tipos mime.
+                IANA - MIME MEDIA TYPES
+                http://www.iana.org/assignments/media-types/
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="application/vnd.sun.xml.writer"/>
+            <xs:enumeration value="application/vnd.sun.xml.impress"/>
+            <xs:enumeration value="vnd.oasis.opendocument.graphics"/>
+            <xs:enumeration value="vnd.oasis.opendocument.image"/>
+            <xs:enumeration value="vnd.oasis.opendocument.presentation"/>
+            <xs:enumeration value="vnd.oasis.opendocument.spreadsheet"/>
+            <xs:enumeration value="vnd.oasis.opendocument.text"/>
+            <xs:enumeration value="vnd.oasis.opendocument.text-master"/>
+            <xs:enumeration value="vnd.oasis.opendocument.text-web"/>
+            <xs:enumeration value="application/vnd.ms-excel"/>
+            <xs:enumeration value="application/mpeg4-generic"/>
+            <xs:enumeration value="application/mp4"/>
+            <xs:enumeration value="application/msword"/>
+            <xs:enumeration value="application/ogg"/>
+            <xs:enumeration value="application/pdf"/>
+            <xs:enumeration value="application/postscript"/>
+            <xs:enumeration value="application/rtf"/>
+            <xs:enumeration value="application/sgml"/>
+            <xs:enumeration value="application/xhtml+xml"/>
+            <xs:enumeration value="application/xml"/>
+            <xs:enumeration value="application/zip"/>
+            <xs:enumeration value="audio/ac3"/>
+            <xs:enumeration value="audio/mp4"/>
+            <xs:enumeration value="audio/mpeg"/>
+            <xs:enumeration value="audio/mpeg4-generic"/>
+            <xs:enumeration value="audio/ogg"/>
+            <xs:enumeration value="image/gif"/>
+            <xs:enumeration value="image/png"/>
+            <xs:enumeration value="image/jpeg"/>
+            <xs:enumeration value="image/tiff"/>
+            <xs:enumeration value="image/bmp"/>
+            <xs:enumeration value="text/plain"/>
+            <xs:enumeration value="text/html"/>
+            <xs:enumeration value="text/xml"/>
+            <xs:enumeration value="text/sgml"/>
+            <xs:enumeration value="text/rtf"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TipoItemType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="metadado"/>
+            <xs:enumeration value="conteudo"/>
+            <xs:enumeration value="conteudo.anotado"/>
+            <xs:enumeration value="conteudo.indisponivel"/>
+            <xs:enumeration value="objeto.fisico"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TipoRelacionamentoType">
+        <xs:annotation>
+            <xs:documentation>Enumerações possíveis para o atributo TipoRelacionamento</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="sucessor.logico.de"/>
+            <xs:enumeration value="publicacao.oficial"/>
+            <xs:enumeration value="equivalente.a"/>
+            <xs:enumeration value="parecer.de"/>
+            <xs:enumeration value="parte.de"/>
+            <xs:enumeration value="peticao.inicial.de"/>
+            <xs:enumeration value="emenda.de"/>
+            <xs:enumeration value="declara.inconstitucional"/>
+            <xs:enumeration value="declara.inconstitucional.dispositivo"/>
+            <xs:enumeration value="referencia"/>
+            <xs:enumeration value="membro.de"/>
+            <xs:enumeration value="sucessivo.ou.precedente.de"/>
+            <xs:enumeration value="revoga"/>
+            <xs:enumeration value="revoga.dispositivo"/>
+            <xs:enumeration value="regulamenta"/>
+            <xs:enumeration value="altera"/>
+            <xs:enumeration value="correlato.a"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="REGEXURNType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="urn:lex(:[a-zA-Z0-9;!\\\-@/$~\._\[\],]+)+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="ItemURNType"/>
+    <xs:simpleType name="ItemanyURNType">
+        <xs:restriction base="xs:anyURI">
+            <xs:minLength value="6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="idPublicador">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>
+</xs:schema>

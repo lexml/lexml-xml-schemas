@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema targetNamespace="http://www.lexml.gov.br/1.0"
+	xmlns="http://www.lexml.gov.br/1.0"
+	elementFormDefault="qualified"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+
+    <xsd:redefine schemaLocation="lexml-base.xsd">
+
+	<xsd:simpleType name="idArtigo">
+		<xsd:annotation>
+			<xsd:documentation>
+				A regras abaixo tratam dos IDs de dispositivos no nível de artigo para baixo.
+				TBD: flexibilizar regras de validação dos ids
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="idArtigo">
+            <xsd:pattern value="(art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+_)?art\d+(-[0-9]{1,3}){0,3}((_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3})(_(inc|dpg)\d+(-[0-9]{1,3}){0,3}(_(ali|dpg)\d+(-[0-9]{1,3}){0,3}(_(ite|dpg)\d+(-[0-9]{1,3}){0,3})?)?)?)?"></xsd:pattern>
+            <xsd:pattern value="art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+(_art\d+(-[0-9]{1,3}){0,3}((_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3})(_(inc|dpg)\d+(-[0-9]{1,3}){0,3}(_(ali|dpg)\d+(-[0-9]{1,3}){0,3}(_(ite|dpg)\d+(-[0-9]{1,3}){0,3})?)?)?)?)?_omi\d+"></xsd:pattern>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+    <xsd:complexType name="DispositivoType">
+        <xsd:complexContent>
+            <xsd:extension base="DispositivoType">
+                <xsd:sequence>
+                    <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                    <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                    <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1"/>
+                    <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element ref="Pena" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+                <xsd:attributeGroup ref="corereqArt"/>
+                <xsd:attributeGroup ref="linkopt"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="AlteracaoType" mixed="true">
+        <xsd:complexContent>
+            <xsd:extension base="AlteracaoType">
+                <xsd:choice minOccurs="1" maxOccurs="unbounded" >
+                    <xsd:group ref="parteInicialElements" />
+                    <xsd:group ref="hierElementsCompleto" />
+                    <xsd:group ref="blockElements" />
+                    <xsd:group ref="containerElements" />
+                    <xsd:group ref="LXcontainers"/>
+                    <xsd:element ref="Omissis"/>
+                </xsd:choice>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    </xsd:redefine>
+
+	<xsd:simpleType name="idAgregador">
+		<xsd:annotation>
+			<xsd:documentation>
+				A regras abaixo tratam dos IDs de dispositivos no nível de artigo para cima.
+				TBD: flexibilizar regras de validação dos ids
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:ID">
+            <xsd:pattern value="(art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+_)?(prt|agh)\d+(-[0-9]{1,3}){0,3}"></xsd:pattern>
+            <xsd:pattern value="(art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+_)?((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}"></xsd:pattern>
+            <xsd:pattern value="(art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+_)?(((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}"></xsd:pattern>
+            <xsd:pattern value="(art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+_)?((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}"></xsd:pattern>
+            <xsd:pattern value="(art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+_)?(((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}"></xsd:pattern>
+            <xsd:pattern value="(art\d+(-[0-9]{1,3}){0,3}(_cpt|_(par|dpg)\d+(-[0-9]{1,3}){0,3}(_inc\d+(-[0-9]{1,3}){0,3})?)_alt\d+_)?(((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}_(sub|agh)\d+(-[0-9]{1,3}){0,3}"></xsd:pattern>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+             <xsd:annotation>
+        		<xsd:documentation>
+		 =====================================================================
+
+		Elements for hierarchical documents
+
+		=====================================================================
+		</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:element name="Parte" substitutionGroup="_Parte">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="hierarchy">
+					<xsd:sequence minOccurs="0" maxOccurs="unbounded" >
+						<xsd:group ref="LXhierCompleto"  minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Livro" substitutionGroup="_Livro">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="hierarchy">
+					<xsd:sequence>
+						<xsd:group ref="LXhierCompleto"  minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Titulo" substitutionGroup="_Titulo">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="hierarchy">
+					<xsd:sequence>
+						<xsd:group ref="LXhierCompleto"  minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Capitulo" substitutionGroup="_Capitulo">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="hierarchy">
+					<xsd:sequence>
+						<xsd:group ref="LXhierCompleto"  minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Secao" substitutionGroup="_Secao">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="hierarchy">
+					<xsd:sequence>
+						<xsd:group ref="LXhierCompleto"  minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Subsecao" substitutionGroup="_Subsecao">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="hierarchy">
+						<xsd:group ref="LXhierCompleto"  minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="ArticleType" >
+		<xsd:sequence >
+            <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+			<xsd:element ref="Rotulo" minOccurs="1" maxOccurs="1" />
+			<xsd:choice>
+				<xsd:sequence >
+				         <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+				<xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="corereqArt"/>
+		<xsd:attributeGroup ref="linkopt"/>
+	</xsd:complexType>
+
+	<xsd:element name="Artigo" type="ArticleType" substitutionGroup="_Artigo"/>
+
+	<xsd:element name="Caput" type="DispositivoType" substitutionGroup="_Caput"/>
+
+	<xsd:element name="Inciso" type="DispositivoType" substitutionGroup="_Inciso"/>
+
+	<xsd:element name="Alinea" type="DispositivoType" substitutionGroup="_Alinea"/>
+
+	<xsd:element name="Paragrafo" type="DispositivoType" substitutionGroup="_Paragrafo"/>
+
+	<xsd:element name="Item" type="DispositivoType" substitutionGroup="_Item"/>
+
+	<xsd:annotation>
+		<xsd:documentation>
+		 =====================================================================
+
+		End of Schema
+
+		=====================================================================
+		</xsd:documentation>
+	</xsd:annotation>
+
+</xsd:schema>

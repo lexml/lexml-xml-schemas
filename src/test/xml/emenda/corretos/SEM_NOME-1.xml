@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmendaProposicao xmlns="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.lexml.gov.br/lexml-emenda-proposicao/1.0 ../xsd/lexml-emenda-proposicao.xsd">
+  <MetadadoEmenda>
+    <Propriedades>
+      <Descricao></Descricao>
+      <Elaborador>jholanda</Elaborador>
+      <Concluida>0</Concluida>
+      <Observacao></Observacao>
+      <Situacao>Emenda Válida (Parcialmente)</Situacao>
+    </Propriedades>
+  </MetadadoEmenda>
+  <Emenda id='emd'>
+    <Proposicao URN='urn:lex:br:congresso.nacional:medida.provisoria:2005-04-04;244:@200504040101'>MPV 244/2005</Proposicao>
+    <Marcadores>
+      <DispositivosImportados></DispositivosImportados>
+      <DispositivosSuprimidos></DispositivosSuprimidos>
+      <DispositivosModificados></DispositivosModificados>
+      <DispositivosAdicionados>
+        <Adicao id='adi1' parteProposicao='Texto' refidPai="art1_cpt">
+          <Inciso id="art1_cpt_inc1">
+            <Rotulo>I -</Rotulo>
+              <p> ewqewqeqe </p>
+          </Inciso>
+        </Adicao>
+      </DispositivosAdicionados>
+    </Marcadores>
+    <Justificativa id='emd1_jus'>
+        <p> sakldsld msad msad, sa mdl samd lsa,d salçd ,saçd ,saçd sa ßæd sad sads ds ad s dsa dsad sa ds d sad sa
+          d sa dsa s dsa sa dsa dsa ds s ad sads adsad sad sa dsa ds ad sad sa dsa ds ad sad sad s dsa ds ads ad
+          sad sad sa sd sa dsa d as sna sa dsa d sad sad sa d sadsa sa. </p>
+        <p> dsadsadsadsadsad dsa,d skadfnmsdktnmfkçgmsdlmsdfsdfç,adfçsa,fk.sndfilsdnfsdjknf sdklnfsdk sakldsld msad
+          msad, sa mdl samd lsa,d salçd ,saçd ,saçd sa ßæd sad sads ds ad s dsa dsad sa ds d sad sa d sa dsa s dsa
+          sa dsa dsa ds s ad sads adsad sad sa dsa ds ad sad sa dsa ds ad sad sad s dsa ds ads ad sad sad sa sd sa
+          dsa d as sna sa dsa d sad sad sa d sadsa sa. </p>
+        <p> sakldsld msad msad, sa mdl samd lsa,d salçd ,saçd ,saçd sa ßæd sad sads ds ad s dsa dsad sa ds d sad sa
+          d sa dsa s dsa sa dsa dsa ds s ad sads adsad sad sa dsa ds ad sad sa dsa ds ad sad sad s dsa ds ads ad
+          sad sad sa sd sa dsa d as sna sa dsa d sad sad sa d sadsa sa. sakldsld msad msad, sa mdl samd lsa,d salçd
+          ,saçd ,saçd sa ßæd sad sads ds ad s dsa dsad sa ds d sad sa d sa dsa s dsa sa dsa dsa ds s ad sads adsad
+          sad sa dsa ds ad sad sa dsa ds ad sad sad s dsa ds ads ad sad sad sa sd sa dsa d as sna sa dsa d sad sad
+          sa d sadsa sa. </p>
+        <p></p>
+    </Justificativa>
+    <ComandoEmenda id="emd_cmd1" tipoComando="simples" acaoComando="alteracao"></ComandoEmenda>
+  </Emenda>
+</EmendaProposicao>
