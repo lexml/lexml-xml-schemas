@@ -8,6 +8,8 @@ import java.io.Reader;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.StringReader;
+import java.net.URLClassLoader;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -73,10 +75,10 @@ public class Validador {
 		SchemaFactory sf = SchemaFactory
 				.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		sf.setResourceResolver(resourceResolver);
-		readSchema(sf,TipoSchema.RIGIDO,"/xsd/lexml-br-rigido.xsd");
-		readSchema(sf,TipoSchema.FLEXIVEL,"/xsd/lexml-flexivel.xsd");
-		readSchema(sf,TipoSchema.OAI,"/xsd/oai_lexml.xsd");
-		readSchema(sf,TipoSchema.EMENDA, "/xsd/lexml-emenda-proposicao.xsd");		
+		readSchema(sf,TipoSchema.RIGIDO,"xsd/lexml-br-rigido.xsd");
+		readSchema(sf,TipoSchema.FLEXIVEL,"xsd/lexml-flexivel.xsd");
+		readSchema(sf,TipoSchema.OAI,"xsd/oai_lexml.xsd");
+		readSchema(sf,TipoSchema.EMENDA, "xsd/lexml-emenda-proposicao.xsd");		
 
 	}
 
@@ -91,7 +93,14 @@ public class Validador {
 	}
 
 	private static InputStream getResourceAsStream(String resource) {
-		return Validator.class.getResourceAsStream(resource);
+		ClassLoader cl = Validador.class.getClassLoader();
+		if(cl instanceof URLClassLoader) {
+			URLClassLoader ucl = (URLClassLoader) cl;
+			logger.info("classloader urls: " + Arrays.asList(ucl.getURLs()));
+		} else {
+			logger.info("classloader class: " + cl.getClass().getName());
+		}
+		return cl.getResourceAsStream(resource);
 	}
 
 	private class MyLSResourceResolver implements LSResourceResolver {
@@ -118,7 +127,7 @@ public class Validador {
 				public Reader getCharacterStream() {
 					logger.info("getCharacterStream");
 					return new BufferedReader(new InputStreamReader(
-							getResourceAsStream("/xsd/" + resourceName)));
+							getResourceAsStream("xsd/" + resourceName)));
 				}
 
 				@Override
