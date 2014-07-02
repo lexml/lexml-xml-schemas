@@ -48,6 +48,7 @@ public class Validador {
 	private final Map<TipoSchema, Schema> schemas = new HashMap<TipoSchema, Schema>();
 
 	private void readSchema(SchemaFactory sf, TipoSchema tipo, String fileName) throws ValidadorException {
+		System.out.println("readSchema: fileName: " + fileName);
 		try {
 			InputStream is = getResourceAsStream(fileName);
 			if(is == null) {				
@@ -86,6 +87,7 @@ public class Validador {
 		@Override
 		public Object resolveEntity(String publicID, String systemID,
 				String baseURI, String namespace) throws XMLStreamException {
+			System.out.println("MyXMLResolver.resolveEntity: resolving " + systemID);
 			// Return null for default impl, or InputStream, or XMLStreamReader,
 			// or XMLEventReader
 			return getResourceAsStream(systemID);
@@ -93,6 +95,7 @@ public class Validador {
 	}
 
 	private static InputStream getResourceAsStream(String resource) {
+		System.out.println("Validador.getResourceAsStream: resorce = " + resource);
 		ClassLoader cl = Validador.class.getClassLoader();
 		if(cl instanceof URLClassLoader) {
 			URLClassLoader ucl = (URLClassLoader) cl;
@@ -111,6 +114,7 @@ public class Validador {
 		public LSInput resolveResource(final String type,
 				final String namespaceURI, final String publicId,
 				final String systemId, final String baseURI) {
+			System.out.println("MyLSResolver.resolveEntity: resolving namespaceURI: " + namespaceURI + ", systemId: " + systemId + ", baseURI: " + baseURI);
 			final String resourceName = resolveResourceName(namespaceURI,
 					systemId, baseURI);
 			if (resourceName == null) {
