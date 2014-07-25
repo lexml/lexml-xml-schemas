@@ -158,6 +158,8 @@
             <xs:enumeration value="vnd.oasis.opendocument.text"/>
             <xs:enumeration value="vnd.oasis.opendocument.text-master"/>
             <xs:enumeration value="vnd.oasis.opendocument.text-web"/>
+            <xs:enumeration value="application/vnd.oasis.opendocument.spreadsheet"/>
+            <xs:enumeration value="application/vnd.oasis.opendocument.text"/>
             <xs:enumeration value="application/vnd.ms-excel"/>
             <xs:enumeration value="application/mpeg4-generic"/>
             <xs:enumeration value="application/mp4"/>
