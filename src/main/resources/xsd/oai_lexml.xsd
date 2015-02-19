@@ -68,6 +68,9 @@
             <xs:element name="DoutrinaAno" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="DoutrinaResponsabilidade" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="DoutrinaClasse" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaClasseUDC" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaClasseDDC" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DoutrinaClasseBBD" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="DoutrinaImprenta" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="DoutrinaEdicao" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="DoutrinaDescricaoFisica" type="lexml:CampoTextoComIdiomaType" minOccurs="0" maxOccurs="unbounded"/>
