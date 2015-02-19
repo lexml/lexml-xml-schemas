@@ -1,0 +1,3 @@
+PUBLIC "http://www.w3.org/2001/xml.xsd" "src/main/resources/xsd/catalog/xml.xsd"
+PUBLIC "http://www.w3.org/Math/XMLSchema/mathml2/common/xlink-href.xsd" "src/main/resources/xsd/catalog/xlink-href.xsd"
+PUBLIC "http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd" "src/main/resources/xsd/mathml2/mathml2.xsd"

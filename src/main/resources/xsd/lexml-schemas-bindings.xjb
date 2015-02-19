@@ -1,0 +1,59 @@
+<jxb:bindings version="1.0"
+              xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<jxb:bindings schemaLocation="lexml-base.xsd">
+		<jxb:schemaBindings>
+			<jxb:package name="br.gov.senado.lexml" />
+		</jxb:schemaBindings>
+		<jxb:bindings node="//xsd:element[@name='ParteFinal']/xsd:complexType/xsd:sequence/xsd:choice/xsd:element[@ref='Assinatura']">
+			<jxb:property name="assinatura0" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='AssinaturaGrupo']/xsd:complexType/xsd:sequence/xsd:choice/xsd:element[@ref='Assinatura']">
+			<jxb:property name="assinatura0" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Parte']">
+			<jxb:factoryMethod name="baseElementParte" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Livro']">
+			<jxb:factoryMethod name="baseElementLivro" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Titulo']">
+			<jxb:factoryMethod name="baseElementTitulo" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Capitulo']">
+			<jxb:factoryMethod name="baseElementCapitulo" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Secao']">
+			<jxb:factoryMethod name="baseElementSecao" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Subsecao']">
+			<jxb:factoryMethod name="baseElementSubsecao" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Artigo']">
+			<jxb:factoryMethod name="baseElementArtigo" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Caput']">
+			<jxb:factoryMethod name="baseElementCaput" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Paragrafo']">
+			<jxb:factoryMethod name="baseElementParagrafo" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Inciso']">
+			<jxb:factoryMethod name="baseElementInciso" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Alinea']">
+			<jxb:factoryMethod name="baseElementAlinea" />
+		</jxb:bindings>
+		<jxb:bindings node="//xsd:element[@name='_Item']">
+			<jxb:factoryMethod name="baseElementItem" />
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings namespace="http://www.lexml.gov.br/1.0" schemaLocation="lexml-br-rigido.xsd">
+		<jxb:schemaBindings>
+			<jxb:package name="br.gov.senado.lexml.rigido" />
+		</jxb:schemaBindings>
+	</jxb:bindings>
+
+<!-- schemaLocation="po.xsd" node="/xs:schema" -->
+</jxb:bindings>
