@@ -16,8 +16,8 @@
 
 	<scm>
 		<url>https://github.com/lexml/${project.artifactId}</url>
-		<developerConnection>scm:git:https://github.com/lexml/${project.artifactId}.git</developerConnection>
 		<connection>scm:git:https://github.com/lexml/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:https://github.com/lexml/${project.artifactId}.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	
