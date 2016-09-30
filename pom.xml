@@ -5,7 +5,7 @@
 	<groupId>br.gov.lexml</groupId>
 	<artifactId>lexml-xml-schemas</artifactId>
 	<packaging>jar</packaging>
-	<version>3.1.8-SNAPSHOT</version>
+	<version>3.1.6-SNAPSHOT</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
