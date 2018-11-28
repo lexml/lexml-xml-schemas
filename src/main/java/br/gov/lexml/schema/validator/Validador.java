@@ -1,17 +1,10 @@
 package br.gov.lexml.schema.validator;
 
-import java.io.ByteArrayInputStream;
-import java.io.CharArrayReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.StringReader;
-import java.net.URLClassLoader;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.ls.LSInput;
+import org.w3c.dom.ls.LSResourceResolver;
+import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
 import javax.xml.stream.XMLInputFactory;
@@ -22,17 +15,24 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.w3c.dom.ls.LSInput;
-import org.w3c.dom.ls.LSResourceResolver;
-import org.xml.sax.SAXException;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.CharArrayReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.StringReader;
+import java.net.URLClassLoader;
+import java.util.Arrays;
+import java.util.EnumMap;
+import java.util.Map;
 
 public class Validador {
-	private static final Logger logger = LoggerFactory
+    private static final Logger    logger   = LoggerFactory
 			.getLogger(Validador.class);
-	private static Validador instance = null;
+    private static final  String    UTF_8    = "utf-8";
+    private static       Validador instance = null;
 
 	public static synchronized Validador getInstance()
 			throws ValidadorException {
@@ -42,13 +42,11 @@ public class Validador {
 		return instance;
 	}
 
-	private final XMLInputFactory inputFactory;
-	private final XMLResolver resolver;
-	private final LSResourceResolver resourceResolver;
-	private final Map<TipoSchema, Schema> schemas = new HashMap<TipoSchema, Schema>();
+    private final LSResourceResolver resourceResolver;
+	private final Map<TipoSchema, Schema> schemas = new EnumMap<TipoSchema, Schema>(TipoSchema.class);
 
 	private void readSchema(SchemaFactory sf, TipoSchema tipo, String fileName) throws ValidadorException {
-		logger.info("readSchema: fileName: " + fileName);
+		logger.info("readSchema: fileName: {}", fileName);
 		try {
 			InputStream is = getResourceAsStream(fileName);
 			if(is == null) {				
@@ -62,9 +60,9 @@ public class Validador {
 	}
 	private Validador() throws ValidadorException {
 
-		resolver = new MyXMLResolver();
+        final XMLResolver resolver = new MyXMLResolver();
 
-		inputFactory = XMLInputFactory.newInstance();
+        final XMLInputFactory inputFactory = XMLInputFactory.newInstance();
 
 		inputFactory.setProperty(XMLInputFactory.IS_NAMESPACE_AWARE, true);
 		inputFactory.setProperty(
@@ -84,10 +82,10 @@ public class Validador {
 	}
 
 	private class MyXMLResolver implements XMLResolver {
-		@Override
+
 		public Object resolveEntity(String publicID, String systemID,
 				String baseURI, String namespace) throws XMLStreamException {
-			logger.info("MyXMLResolver.resolveEntity: resolving " + systemID);
+			logger.info("MyXMLResolver.resolveEntity: resolving {}", systemID);
 			// Return null for default impl, or InputStream, or XMLStreamReader,
 			// or XMLEventReader
 			return getResourceAsStream(systemID);
@@ -95,13 +93,13 @@ public class Validador {
 	}
 
 	private static InputStream getResourceAsStream(String resource) {
-		logger.info("Validador.getResourceAsStream: resorce = " + resource);
+		logger.info("Validador.getResourceAsStream: resorce = {}", resource);
 		ClassLoader cl = Validador.class.getClassLoader();
 		if(cl instanceof URLClassLoader) {
 			URLClassLoader ucl = (URLClassLoader) cl;
-			logger.info("classloader urls: " + Arrays.asList(ucl.getURLs()));
+			logger.info("classloader urls: {}",Arrays.asList(ucl.getURLs()));
 		} else {
-			logger.info("classloader class: " + cl.getClass().getName());
+			logger.info("classloader class: {}", cl.getClass().getName());
 		}
 		return cl.getResourceAsStream(resource);
 	}
@@ -110,120 +108,137 @@ public class Validador {
 		private final Logger logger = LoggerFactory
 				.getLogger(MyLSResourceResolver.class);
 
-		@Override
+
 		public LSInput resolveResource(final String type,
 				final String namespaceURI, final String publicId,
 				final String systemId, final String baseURI) {
-			logger.info("MyLSResolver.resolveEntity: resolving namespaceURI: " + namespaceURI + ", systemId: " + systemId + ", baseURI: " + baseURI);
-			final String resourceName = resolveResourceName(namespaceURI,
+			logger.info("MyLSResolver.resolveEntity: resolving namespaceURI: {}, systemId: {}, baseURI: {}", namespaceURI, systemId, baseURI);			final String resourceName = resolveResourceName(namespaceURI,
 					systemId, baseURI);
 			if (resourceName == null) {
-				logger.error("resolveResource: cannot resolve " + namespaceURI);
+				logger.error("resolveResource: cannot resolve {}", namespaceURI);
 				return null;
 			} else {
-				logger.info("resolveResource: resolved " + namespaceURI
-						+ " to " + resourceName);
+				logger.info("resolveResource: resolved {} to {}", namespaceURI, resourceName);
 			}
 			// Return null for default impl or a LSInput
 			return new LSInput() {
 
-				@Override
+
 				public Reader getCharacterStream() {
 					logger.info("getCharacterStream");
 					return new BufferedReader(new InputStreamReader(
 							getResourceAsStream("xsd/" + resourceName)));
 				}
 
-				@Override
+
 				public void setCharacterStream(Reader characterStream) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setCharacterStream");
 				}
 
-				@Override
+
 				public InputStream getByteStream() {
 					return null;
 				}
 
-				@Override
+
 				public void setByteStream(InputStream byteStream) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setByteStream");
 				}
 
-				@Override
+
 				public String getStringData() {
 					return null;
 				}
 
-				@Override
+
 				public void setStringData(String stringData) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setStringData");
 				}
 
-				@Override
+
 				public String getSystemId() {
 					return systemId;
 				}
 
-				@Override
+
 				public void setSystemId(String systemId) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setSystemId");
 
 				}
 
-				@Override
+
 				public String getPublicId() {
 					return publicId;
 				}
 
-				@Override
+
 				public void setPublicId(String publicId) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setPublicId");
 				}
 
-				@Override
+
 				public String getBaseURI() {
 					return baseURI;
 				}
 
-				@Override
+
 				public void setBaseURI(String baseURI) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setBaseURI");
 				}
 
-				@Override
+
 				public String getEncoding() {
-					return "utf-8";
+					return UTF_8;
 				}
 
-				@Override
+
 				public void setEncoding(String encoding) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setEncoding");
 				}
 
-				@Override
+
 				public boolean getCertifiedText() {
 					return false;
 				}
 
-				@Override
+
 				public void setCertifiedText(boolean certifiedText) {
-					throw new RuntimeException(
+					throw new UnsupportedOperationException(
 							"unexpected method call: setCertifiedText");
 				}
 
 			};
 		}
+
+        private String resolveResourceName(String namespaceURI, String systemId,
+                                           String baseURI) {
+            final String res;
+            if (baseURI != null
+                && baseURI
+                      .equals("http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd")) {
+                res = "mathml2/" + systemId;
+            } else if (systemId != null && systemId.contains("mathml2")) {
+                res = systemId.replaceFirst("^.*mathml2/", "mathml2/");
+            } else if (systemId != null) {
+                res = systemId.replaceFirst("^.*/", "");
+            } else {
+                res = null;
+            }
+            logger.info("resolverResourceName: namespaceURI = {}, systemId = {}, baseURI = {}, res = {}",
+                        namespaceURI, systemId, baseURI, res);
+            return res;
+        }
 	}
 
-	public ResultadoValidacao valide(TipoSchema tipoSchema, Source source)
-			throws IOException, IllegalArgumentException {
+	private ResultadoValidacao valide(TipoSchema tipoSchema, Source source)
+			throws IOException {
 		ResultadoValidacao res = new ResultadoValidacao();
 		Schema schema = schemas.get(tipoSchema);
 		Validator validator = schema.newValidator();
@@ -232,89 +247,47 @@ public class Validador {
 		try {
 			validator.validate(source);
 		} catch (SAXException e) {
-			throw new RuntimeException("Unexpected exception", e);
+			throw new IllegalStateException("Unexpected exception", e);
 		}
 		return res;
 	}
 
-	public ResultadoValidacao valide(TipoSchema tipoSchema, Reader fonte)
-			throws IOException, IllegalArgumentException {
+	private ResultadoValidacao valide(TipoSchema tipoSchema, Reader fonte)
+			throws IOException {
 		return valide(tipoSchema, new StreamSource(fonte));
 	}
 
 	public ResultadoValidacao valide(TipoSchema tipoSchema, char[] fonte)
-			throws IOException, IllegalArgumentException {
+			throws IOException {
 		return valide(tipoSchema, new CharArrayReader(fonte));
 	}
 
 	public ResultadoValidacao valide(TipoSchema tipoSchema, String fonte)
-			throws IOException, IllegalArgumentException {
+			throws IOException {
 		return valide(tipoSchema, new StreamSource(new StringReader(fonte)));
 	}
 
-	public ResultadoValidacao valide(TipoSchema tipoSchema, InputStream fonte,
-			String encoding) throws IOException, IllegalArgumentException {
-		return valide(tipoSchema, new StreamSource(fonte, encoding));
+	private ResultadoValidacao valide(
+          TipoSchema tipoSchema, InputStream fonte) throws IOException {
+		return valide(tipoSchema, new StreamSource(fonte, UTF_8));
 	}
 
-	public ResultadoValidacao valide(TipoSchema tipoSchema, InputStream fonte)
-			throws IOException, IllegalArgumentException {
-		return valide(tipoSchema, fonte, "utf-8");
+	public ResultadoValidacao valide(
+          TipoSchema tipoSchema, byte[] fonte) throws IOException {
+		return valide(tipoSchema, new ByteArrayInputStream(fonte));
 	}
 
-	public ResultadoValidacao valide(TipoSchema tipoSchema, byte[] fonte,
-			String encoding) throws IOException, IllegalArgumentException {
-		return valide(tipoSchema, new ByteArrayInputStream(fonte), encoding);
-	}
 
-	public ResultadoValidacao valide(TipoSchema tipoSchema, byte[] fonte)
-			throws IOException, IllegalArgumentException {
-		return valide(tipoSchema, fonte, "utf-8");
+	public ResultadoValidacao valide(TipoSchema tipoSchema,
+			String resourceName, Class<?> clazz)
+			throws IOException {
+		return valide(tipoSchema, clazz.getResourceAsStream(resourceName));
 	}
 
 	public ResultadoValidacao valide(TipoSchema tipoSchema,
-			String resourceName, Class<?> clazz, String encoding)
-			throws IOException, IllegalArgumentException {
-		return valide(tipoSchema, clazz.getResourceAsStream(resourceName),
-				encoding);
+			String resourceName, ClassLoader loader)
+			throws IOException {
+		return valide(tipoSchema, loader.getResourceAsStream(resourceName));
 	}
 
-	public ResultadoValidacao valide(TipoSchema tipoSchema,
-			String resourceName, Class<?> clazz) throws IOException,
-			IllegalArgumentException {
-		return valide(tipoSchema, resourceName, clazz, "utf-8");
-	}
-
-	public ResultadoValidacao valide(TipoSchema tipoSchema,
-			String resourceName, ClassLoader loader, String encoding)
-			throws IOException, IllegalArgumentException {
-		return valide(tipoSchema, loader.getResourceAsStream(resourceName),
-				encoding);
-	}
-
-	public ResultadoValidacao valide(TipoSchema tipoSchema,
-			String resourceName, ClassLoader loader) throws IOException,
-			IllegalArgumentException {
-		return valide(tipoSchema, resourceName, loader, "utf-8");
-	}
-
-	private String resolveResourceName(String namespaceURI, String systemId,
-			String baseURI) {
-		final String res;
-		if (baseURI != null
-				&& baseURI
-						.equals("http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd")) {
-			res = "mathml2/" + systemId;
-		} else if (systemId != null && systemId.contains("mathml2")) {
-			res = systemId.replaceFirst("^.*mathml2/", "mathml2/");
-		} else if (systemId != null) {
-			res = systemId.replaceFirst("^.*/", "");
-		} else {
-			res = null;
-		}
-		logger.info(String
-				.format("resolverResourceName: namespaceURI = %s, systemId = %s, baseURI = %s, res = %s",
-						namespaceURI, systemId, baseURI, res));
-		return res;
-	}
 }

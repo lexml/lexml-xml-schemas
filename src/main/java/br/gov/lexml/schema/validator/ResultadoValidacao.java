@@ -12,15 +12,15 @@ public final class ResultadoValidacao implements ErrorHandler {
 	public final List<SAXParseException> erros = new ArrayList<SAXParseException>();
 	public final List<SAXParseException> errosFatais= new ArrayList<SAXParseException>();
 	public final List<SAXParseException> avisos= new ArrayList<SAXParseException>();
-	@Override
+
 	public void warning(SAXParseException exception) throws SAXException {
 		avisos.add(exception);
 	}
-	@Override
+
 	public void error(SAXParseException exception) throws SAXException {
 		erros.add(exception);
 	}
-	@Override
+
 	public void fatalError(SAXParseException exception) throws SAXException {
 		errosFatais.add(exception);
 	}		
