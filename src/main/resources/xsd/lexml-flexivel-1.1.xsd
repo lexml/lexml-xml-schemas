@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mathml="http://www.w3.org/1998/Math/MathML" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd" />
+    <xsd:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/Math/XMLSchema/mathml2/common/xlink-href.xsd" />
+    <xsd:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd" />
+
+    <xsd:element name="Parte">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="AgrupamentoHierarquico" minOccurs="0" maxOccurs="unbounded" />                
+                <xsd:group ref="LXhierCompleto" minOccurs="0" maxOccurs="unbounded" />                
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Livro">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="AgrupamentoHierarquico" minOccurs="0" maxOccurs="unbounded" />                
+                <xsd:group ref="LXhierCompleto" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Titulo">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="AgrupamentoHierarquico" minOccurs="0" maxOccurs="unbounded" />                
+                <xsd:group ref="LXhierCompleto" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Capitulo">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="AgrupamentoHierarquico" minOccurs="0" maxOccurs="unbounded" />                
+                <xsd:group ref="LXhierCompleto" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Secao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="AgrupamentoHierarquico" minOccurs="0" maxOccurs="unbounded" />                
+                <xsd:group ref="LXhierCompleto" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Subsecao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="AgrupamentoHierarquico" minOccurs="0" maxOccurs="unbounded" />                
+                <xsd:group ref="LXhierCompleto" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Artigo">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Rotulo" minOccurs="1" maxOccurs="1" />
+                <xsd:group ref="G1"/>                                    
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereqArt" />
+            <xsd:attribute ref="xlink:href" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Caput">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Pena" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereqArt" />
+            <xsd:attribute ref="xlink:href" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Inciso">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Pena" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereqArt" />
+            <xsd:attribute ref="xlink:href" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Alinea">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Pena" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereqArt" />
+            <xsd:attribute ref="xlink:href" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Paragrafo">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Pena" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereqArt" />
+            <xsd:attribute ref="xlink:href" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Item">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Pena" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereqArt" />
+            <xsd:attribute ref="xlink:href" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="LexML">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Metadado" />
+                <xsd:group ref="DocumentContent"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Norma">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="ParteInicial" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Articulacao" />
+                <xsd:element ref="ParteFinal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attribute ref="xml:lang" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Justificacao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AutorProjeto" type="xsd:string" />
+
+    <xsd:element name="ProjetoNorma">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Norma" />
+                <xsd:element ref="Justificacao" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element name="AutorProjeto" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+
+    <xsd:element name="Jurisprudencia">
+      <xsd:complexType>
+          <xsd:sequence>
+            <xsd:group ref="JurisprudenciaElement"/>
+          </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="DocumentoGenerico">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="DocumentoArticulado">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="ParteInicial" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Articulacao" />
+                <xsd:element ref="ParteFinal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attribute ref="xml:lang" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Anexo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:group ref="AnexoElement"/>
+          </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:element name="ParteInicial">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="FormulaPromulgacao" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Epigrafe" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Ementa" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Preambulo" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ParteFinal">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="LocalDataFecho" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="AssinaturaChoice"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="FormulaPromulgacao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="p" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Epigrafe">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Ementa">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="LocalDataFecho">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="p" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Observacao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="p" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Preambulo">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AssinaturaGrupo">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="NomeGrupo" type="xsd:string" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="AssinaturasChoice2"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Assinaturas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Assinatura" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Assinatura">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="NomePessoa" minOccurs="1" maxOccurs="unbounded" />
+                <xsd:element ref="Cargo" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="NomePessoa" type="xsd:string" />
+
+    <xsd:element name="Cargo" type="xsd:string" />
+
+    <xsd:element name="ReferenciaAnexo">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Anexos">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="ReferenciaAnexo" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Articulacao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="hierElements" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Tratamento" type="xsd:string" />
+
+    <xsd:element name="NomeAgente" type="xsd:string" />
+
+    <xsd:element name="Sumula">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Epigrafe" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="Ementa" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="Observacao" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="EmentaTexto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AcordaoTexto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="RelatorioTexto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="VotoTexto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="DebateTexto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ExtratoAtaTexto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="PartePrincipal" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Anexos" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:element name="Acordao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="CabecalhoAcordao" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="EmentaTexto" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="AcordaoTexto" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="RelatorioTexto" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="VotoTexto" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="DebateTexto" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="ExtratoAtaTexto" minOccurs="1" maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="DataJulgamento" type="xsd:date" />
+
+    <xsd:element name="OrgaoJulgador" type="xsd:string" />
+
+    <xsd:element name="CabecalhoAcordao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Epigrafe" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="DataJulgamento" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="OrgaoJulgador" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="Relator" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="PartesProcesso" minOccurs="2" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Relator">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="Tratamento" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgente" minOccurs="1" maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ParteProcesso">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="Tratamento" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgente" minOccurs="1" maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="PartesProcesso">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="ParteProcesso" minOccurs="1" maxOccurs="unbounded" />
+                <xsd:element ref="AdvogadosParte" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AdvogadosParte">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="1" maxOccurs="1" />
+                <xsd:element ref="Tratamento" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgente" minOccurs="1" maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="PartePrincipal">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:group ref="PartePrincipalElement" minOccurs="1" maxOccurs="unbounded"/>
+          </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="DispositivoGenerico">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Alteracao" minOccurs="0" maxOccurs="1" />
+                <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Pena" minOccurs="0" maxOccurs="1" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereqArt" />
+            <xsd:attribute ref="xlink:href" />
+            <xsd:attribute name="nome" type="xsd:string" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Pena">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+            <xsd:attribute ref="xlink:href" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="TituloDispositivo">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Rotulo" type="xsd:string" />
+
+    <xsd:element name="NomeAgrupador">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Texto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="blockElements"  minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Remissao">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute ref="xlink:href" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="RemissaoMultipla">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute ref="xml:base" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="NotaReferenciada">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="nota" type="xsd:IDREF" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Alteracao">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="AlteracaoElement" minOccurs="1" maxOccurs="unbounded"/>                
+            <xsd:attributeGroup ref="corereq" />
+            <xsd:attribute ref="xml:base" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Omissis">
+        <xsd:complexType>
+            <xsd:attribute name="id" use="required" type="xsd:ID" />
+            <xsd:attribute name="abreAspas" type="TipoMarcador" />
+            <xsd:attribute name="fechaAspas" type="TipoMarcador" />
+            <xsd:attribute name="notaAlteracao" type="xsd:string" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Formula">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="mathml:math" minOccurs="0" maxOccurs="1"/>
+            </xsd:sequence>
+            <xsd:attribute name="fonte" type="xsd:string" />
+            <xsd:attribute name="tipo" type="xsd:string" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AgrupamentoHierarquico">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Rotulo" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="NomeAgrupador" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="AgrupamentoHierarquico" minOccurs="0" maxOccurs="unbounded" />                
+                <xsd:group ref="LXhierCompleto" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+            <xsd:attribute name="nome" type="xsd:string" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Agrupamento">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="blockElements"  minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+            <xsd:attribute name="nome" type="xsd:string" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Bloco">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>            
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="nome" type="xsd:string" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="EmLinha">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="nome" type="xsd:string" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Marcador">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="corereq" />
+            <xsd:attribute name="nome" type="xsd:string" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ConteudoExterno">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:any namespace="##other" />
+            </xsd:sequence>            
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="div">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="blockElements"  minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="p">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="li">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="liElement" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="value" type="xsd:string" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="span">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute ref="xlink:href" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="b">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="i">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="sub">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="sup">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ins">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="del">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="dfn">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="a">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute ref="xlink:href" use="required" />
+            <xsd:attribute name="name" type="xsd:string" />
+            <xsd:attribute name="target" type="xsd:string" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="img">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="src" type="xsd:anyURI" use="required" />
+            <xsd:attribute name="alt" type="xsd:string" />
+            <xsd:attribute name="width" type="xsd:integer" />
+            <xsd:attribute name="height" type="xsd:integer" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ul">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="li" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ol">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="li" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="table">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tr" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="HTMLattrs" />
+            <xsd:attribute name="width" type="xsd:integer" />
+            <xsd:attribute name="border" type="xsd:integer" />
+            <xsd:attribute name="cellspacing" type="xsd:integer" />
+            <xsd:attribute name="cellpadding" type="xsd:integer" />
+            <xsd:attribute name="id" use="required" type="xsd:ID" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="tr">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:group ref="trElement" minOccurs="1" maxOccurs="unbounded"/>
+          </xsd:sequence>
+            <xsd:attributeGroup ref="HTMLattrs" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="th">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attributeGroup ref="cellattrs" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="td">
+        <xsd:complexType mixed="true">
+            <xsd:group ref="InlineOrMarkerChoice" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attributeGroup ref="cellattrs" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Metadado">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Identificacao" />
+                <xsd:element ref="CicloDeVida" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="EventosGerados" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="Notas" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="Recursos" minOccurs="0" maxOccurs="1" />
+                <xsd:element ref="MetadadoProprietario" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Identificacao">
+        <xsd:complexType>
+            <xsd:attribute name="URN" type="xsd:anyURI" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="CicloDeVida">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Evento" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="EventosGerados">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Evento" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Evento">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:group ref="EventoElement" minOccurs="1" maxOccurs="unbounded"/>                
+          </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+            <xsd:attribute name="data" type="xsd:date" use="required" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Publicacao">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="EntradaEmVigor">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Republicacao">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Retificacao">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ProjetoNormaOrigem">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="JulgadoOrigemAnulacao">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="NormaFonte">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="MensagemVetoAplicado">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="RevogacaoTotal">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AnulamentoTotal">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="AlvoURN" type="xsd:anyURI" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Criacao">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="ProjetoNormaOrigem" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="JulgadoOrigemAnulacao" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="MensagemVetoAplicado" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AlteracaoFragmento">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="ModificacaoTextual" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="RevogacaoParcial" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="AnulamentoParcial" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element ref="DerrubadaVetoParcial" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ModificacaoTextual">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+            <xsd:attribute name="AlvoURN" />
+            <xsd:attribute name="AlvoLocal" type="xsd:IDREFS" />
+            <xsd:attribute name="FonteLocal" type="xsd:IDREFS" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="RevogacaoParcial">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+            <xsd:attribute name="AlvoURN" />
+            <xsd:attribute name="AlvoLocal" type="xsd:IDREFS" />
+            <xsd:attribute name="FonteLocal" type="xsd:IDREFS" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AnulamentoParcial">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+            <xsd:attribute name="AlvoURN" />
+            <xsd:attribute name="AlvoLocal" type="xsd:IDREFS" />
+            <xsd:attribute name="FonteLocal" type="xsd:IDREFS" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="DerrubadaVetoParcial">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="coreopt" />
+            <xsd:attribute name="FonteURN" type="xsd:anyURI" />
+            <xsd:attribute name="AlvoURN" />
+            <xsd:attribute name="AlvoLocal" type="xsd:IDREFS" />
+            <xsd:attribute name="FonteLocal" type="xsd:IDREFS" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Notas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Nota"  minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Nota">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attributeGroup ref="corereq" />
+            <xsd:attribute name="exporta" type="xsd:boolean" />
+            <xsd:attribute name="dataInclusao" type="xsd:date" />
+            <xsd:attribute name="autor" type="xsd:IDREF" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Recursos">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Recurso"  minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Recurso">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="corereq" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="MetadadoProprietario" type="anyWithSource"/>
+
+    <xsd:group name="LXhierCompleto">
+        <xsd:choice>
+            <xsd:element ref="Parte" />
+            <xsd:element ref="Livro" />
+            <xsd:element ref="Titulo" />
+            <xsd:element ref="Capitulo" />
+            <xsd:element ref="Secao" />
+            <xsd:element ref="Artigo" />
+            <xsd:element ref="Subsecao" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="LXcontainers">
+        <xsd:choice>
+            <xsd:element ref="Caput" />
+            <xsd:element ref="Paragrafo" />
+            <xsd:element ref="Inciso" />
+            <xsd:element ref="Alinea" />
+            <xsd:element ref="Item" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="LXinline">
+        <xsd:choice>
+            <xsd:element ref="Remissao" />
+            <xsd:element ref="RemissaoMultipla" />
+            <xsd:element ref="Alteracao" />
+            <xsd:element ref="Formula" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="HTMLblock">
+        <xsd:choice>
+            <xsd:element ref="p" />
+            <xsd:element ref="ul" />
+            <xsd:element ref="ol" />
+            <xsd:element ref="table" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="HTMLinline">
+        <xsd:choice>
+            <xsd:element ref="span" />
+            <xsd:element ref="b" />
+            <xsd:element ref="i" />
+            <xsd:element ref="a" />
+            <xsd:element ref="sub" />
+            <xsd:element ref="sup" />
+            <xsd:element ref="ins" />
+            <xsd:element ref="del" />
+            <xsd:element ref="dfn" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="hierElements">
+        <xsd:choice>
+            <xsd:element ref="Parte" />
+            <xsd:element ref="Livro" />
+            <xsd:element ref="Titulo" />
+            <xsd:element ref="Capitulo" />
+            <xsd:element ref="Secao" />
+            <xsd:element ref="Artigo" />
+            <xsd:element ref="AgrupamentoHierarquico" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="hierElementsCompleto">
+        <xsd:choice>
+            <xsd:element ref="Parte" />
+            <xsd:element ref="Livro" />
+            <xsd:element ref="Titulo" />
+            <xsd:element ref="Capitulo" />
+            <xsd:element ref="Secao" />
+            <xsd:element ref="Artigo" />
+            <xsd:element ref="Subsecao" />
+            <xsd:element ref="AgrupamentoHierarquico" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="containerElements">
+        <xsd:choice>
+            <xsd:element ref="div" />
+            <xsd:element ref="Agrupamento" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="parteInicialElements">
+        <xsd:choice>
+            <xsd:element ref="FormulaPromulgacao" />
+            <xsd:element ref="Epigrafe" />
+            <xsd:element ref="Ementa" />
+            <xsd:element ref="Preambulo" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="blockElements">
+        <xsd:choice>
+            <xsd:element ref="p" />
+            <xsd:element ref="ul" />
+            <xsd:element ref="ol" />
+            <xsd:element ref="table" />
+            <xsd:element ref="ConteudoExterno" />
+            <xsd:element ref="Bloco" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="inlineElements">
+        <xsd:choice>
+            <xsd:element ref="Remissao" />
+            <xsd:element ref="RemissaoMultipla" />
+            <xsd:element ref="Alteracao" />
+            <xsd:element ref="Formula" />
+            <xsd:element ref="span" />
+            <xsd:element ref="b" />
+            <xsd:element ref="i" />
+            <xsd:element ref="a" />
+            <xsd:element ref="sub" />
+            <xsd:element ref="sup" />
+            <xsd:element ref="ins" />
+            <xsd:element ref="del" />
+            <xsd:element ref="dfn" />
+            <xsd:element ref="EmLinha" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="markerElements">
+        <xsd:choice>
+            <xsd:element ref="NotaReferenciada" />
+            <xsd:element ref="img" />
+            <xsd:element ref="Marcador" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="G1"> <!-- Sub-elementos de Artigo -->
+        <xsd:choice>
+           <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded"/>
+           <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded"/>           
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="DocumentContent">
+        <xsd:choice>
+            <xsd:element ref="Norma" />
+            <xsd:element ref="ProjetoNorma" />
+            <xsd:element ref="Jurisprudencia" />
+            <xsd:element ref="DocumentoGenerico" />
+            <xsd:element ref="Anexo" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="AssinaturaChoice">
+        <xsd:choice>
+            <xsd:element ref="AssinaturaGrupo" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element ref="Assinaturas" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element ref="Assinatura" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="InlineOrMarkerChoice">
+        <xsd:choice>
+            <xsd:group ref="inlineElements" />
+            <xsd:group ref="markerElements" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="liElement">
+        <xsd:choice>
+            <xsd:group ref="inlineElements" />
+            <xsd:group ref="markerElements" />
+            <xsd:element ref="ul" />
+            <xsd:element ref="ol" />
+            <xsd:element ref="p" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="AssinaturasChoice2">
+        <xsd:choice>
+            <xsd:element ref="Assinaturas" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element ref="Assinatura" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="PartePrincipalElement">
+        <xsd:choice>
+            <xsd:element ref="AgrupamentoHierarquico" />
+            <xsd:group ref="containerElements" />
+            <xsd:group ref="blockElements" />
+        </xsd:choice>
+    </xsd:group>
+    
+    <xsd:group name="AlteracaoElement">
+        <xsd:choice>
+            <xsd:group ref="parteInicialElements" />
+            <xsd:group ref="hierElementsCompleto" />
+            <xsd:group ref="blockElements" />
+            <xsd:group ref="containerElements" />
+            <xsd:group ref="LXcontainers" />
+            <xsd:element ref="Omissis" />
+        </xsd:choice>    
+    </xsd:group>
+
+    <xsd:group name="EventoElement">
+        <xsd:choice>
+            <xsd:element ref="Criacao" />
+            <xsd:element ref="Publicacao" />
+            <xsd:element ref="EntradaEmVigor" />
+            <xsd:element ref="Retificacao" />
+            <xsd:element ref="Republicacao" />
+            <xsd:element ref="RevogacaoTotal" />
+            <xsd:element ref="AnulamentoTotal" />
+            <xsd:element ref="AlteracaoFragmento" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="JurisprudenciaElement">
+        <xsd:choice>
+            <xsd:element ref="Sumula" />
+            <xsd:element ref="Acordao" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="AnexoElement">
+        <xsd:choice>
+            <xsd:element ref="DocumentoArticulado" />
+            <xsd:element ref="DocumentoGenerico" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:group name="trElement">
+        <xsd:choice>
+            <xsd:element ref="th" />
+            <xsd:element ref="td" />
+        </xsd:choice>
+    </xsd:group>
+
+    <xsd:attributeGroup name="enactment">
+        <xsd:attribute name="eventoInicial" type="xsd:anyURI" />
+        <xsd:attribute name="eventoFinal" type="xsd:anyURI" />
+        <xsd:attribute name="situacao" type="TipoSituacao" />
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="cellattrs">
+        <xsd:attribute name="rowspan" type="xsd:integer" default="1" />
+        <xsd:attribute name="colspan" type="xsd:integer" default="1" />
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="HTMLattrs">
+        <xsd:attribute name="class" type="xsd:string" />
+        <xsd:attribute name="style" type="xsd:string" />
+        <xsd:attribute name="title" type="xsd:string" />
+        <xsd:attribute ref="xml:lang" default="pt-BR" />
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="corereq">
+        <xsd:attributeGroup ref="HTMLattrs" />
+        <xsd:attributeGroup ref="enactment" />
+        <xsd:attribute name="id" use="required" type="xsd:ID" />
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="coreopt">
+        <xsd:attributeGroup ref="HTMLattrs" />
+        <xsd:attributeGroup ref="enactment" />
+        <xsd:attribute name="id" type="xsd:ID" />
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="corereqArt">
+        <xsd:attributeGroup ref="HTMLattrs" />
+        <xsd:attributeGroup ref="enactment" />
+        <xsd:attribute name="id" use="required" type="xsd:ID" /> <!-- type="idArtigo" -->
+        <xsd:attribute name="textoOmitido" type="TipoMarcador" />
+    </xsd:attributeGroup>
+
+    <xsd:complexType name="anyWithSource">
+        <xsd:complexContent>
+            <xsd:extension base="xsd:anyType">
+                <xsd:attribute name="fonte" use="required" type="xsd:anyURI" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="TipoSituacao">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="omissis" />
+            <xsd:enumeration value="revogado" />
+            <xsd:enumeration value="suspenso" />
+            <xsd:enumeration value="vetado" />
+            <xsd:enumeration value="superado" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="TipoMarcador">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="s" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
