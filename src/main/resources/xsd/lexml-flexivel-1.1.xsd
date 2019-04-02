@@ -83,7 +83,7 @@
             <xsd:sequence>
                 <xsd:element ref="TituloDispositivo" minOccurs="0" maxOccurs="1" />
                 <xsd:element ref="Rotulo" minOccurs="1" maxOccurs="1" />
-                <xsd:group ref="G1"/>                                    
+                <xsd:group ref="G1" minOccurs="0" maxOccurs="unbounded"/>                                    
             </xsd:sequence>
             <xsd:attributeGroup ref="corereqArt" />
             <xsd:attribute ref="xlink:href" />
@@ -1225,8 +1225,8 @@
 
     <xsd:group name="G1"> <!-- Sub-elementos de Artigo -->
         <xsd:choice>
-           <xsd:group ref="LXcontainers" minOccurs="0" maxOccurs="unbounded"/>
-           <xsd:element ref="DispositivoGenerico" minOccurs="0" maxOccurs="unbounded"/>           
+           <xsd:group ref="LXcontainers"/>
+           <xsd:element ref="DispositivoGenerico"/>           
         </xsd:choice>
     </xsd:group>
 

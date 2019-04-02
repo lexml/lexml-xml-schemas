@@ -1136,12 +1136,12 @@
 	      </xsd:complexType>
 	</xsd:element>
 
-      	<xsd:complexType name="refURNAlvo" >
+    <xsd:complexType name="refURNAlvo" >
 		<xsd:attributeGroup ref="coreopt"/>
 		<xsd:attribute name="FonteURN" type="xsd:anyURI"/>
-      	                      <xsd:attribute name="AlvoURN"/>
+      	<xsd:attribute name="AlvoURN"  type="xsd:anyURI"/>
 		<xsd:attribute name="AlvoLocal" type="xsd:IDREFS"/>
-      	                      <xsd:attribute name="FonteLocal" type="xsd:IDREFS"/>
+      	<xsd:attribute name="FonteLocal" type="xsd:IDREFS"/>
 	</xsd:complexType>
 
       	<xsd:complexType name="URNtype" >
