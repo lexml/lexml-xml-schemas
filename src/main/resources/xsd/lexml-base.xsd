@@ -126,6 +126,9 @@
 		<xsd:choice>
 			<xsd:element ref="Remissao"/>
 			<xsd:element ref="RemissaoMultipla"/>
+            <!-- TODO: O elemento alteração não derveria ser usado como elemento inline,
+               ao invés disso, deve-se especificar outro elemento, ex. "AlteracaoInline",
+               cujo conteúdo seja também inline. -->
 			<xsd:element ref="Alteracao"/>
 		    <xsd:element ref="Formula"/>
 		</xsd:choice>
@@ -786,7 +789,7 @@
 			</xsd:complexContent>
 		</xsd:complexType>
 	</xsd:element>
-
+    
 	<xsd:element name="Alteracao" type="AlteracaoType"/>
 
     <xsd:complexType name="AlteracaoType">
