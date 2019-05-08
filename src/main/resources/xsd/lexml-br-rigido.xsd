@@ -120,10 +120,10 @@
             <xsd:element name="Artigo" type="ArtigoEmAlteracaoType" />
             <xsd:element ref="Omissis" />
           </xsd:choice>
-          <xsd:choice minOccurs="0" maxOccurs="unbounded">
-            <xsd:element ref="Omissis" />
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
             <xsd:element name="Livro" type="LivroEmAlteracaoType" />
-          </xsd:choice>
+            <xsd:element ref="Omissis" minOccurs="0"/>
+          </xsd:sequence>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
@@ -148,10 +148,10 @@
             <xsd:element name="Artigo" type="ArtigoEmAlteracaoType" />
             <xsd:element ref="Omissis" />
           </xsd:choice>
-          <xsd:choice minOccurs="0" maxOccurs="unbounded">
-            <xsd:element ref="Omissis" />
-          <xsd:element name="Titulo" type="TituloEmAlteracaoType"/>
-          </xsd:choice>
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="Titulo" type="TituloEmAlteracaoType"/>
+            <xsd:element ref="Omissis" minOccurs="0"/>
+          </xsd:sequence>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
@@ -176,10 +176,10 @@
             <xsd:element name="Artigo" type="ArtigoEmAlteracaoType" />
             <xsd:element ref="Omissis" />
           </xsd:choice>
-          <xsd:choice minOccurs="0" maxOccurs="unbounded">
-            <xsd:element ref="Omissis" />
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
             <xsd:element name="Capitulo" type="CapituloEmAlteracaoType"/>
-          </xsd:choice>
+            <xsd:element ref="Omissis" minOccurs="0"/>
+          </xsd:sequence>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
@@ -204,10 +204,10 @@
             <xsd:element name="Artigo" type="ArtigoEmAlteracaoType" />
             <xsd:element ref="Omissis" />
           </xsd:choice>
-          <xsd:choice minOccurs="0" maxOccurs="unbounded">
-            <xsd:element ref="Omissis" />
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
             <xsd:element name="Secao" type="SecaoEmAlteracaoType"/>
-          </xsd:choice>
+            <xsd:element ref="Omissis" minOccurs="0"/>
+          </xsd:sequence>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
@@ -232,10 +232,10 @@
             <xsd:element name="Artigo" type="ArtigoEmAlteracaoType" />
             <xsd:element ref="Omissis" />
           </xsd:choice>
-          <xsd:choice minOccurs="0" maxOccurs="unbounded">
-            <xsd:element ref="Omissis" />
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
             <xsd:element name="Subsecao" type="SubsecaoEmAlteracaoType"/>
-          </xsd:choice>
+            <xsd:element ref="Omissis" minOccurs="0"/>
+          </xsd:sequence>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
