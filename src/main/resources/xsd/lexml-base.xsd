@@ -30,6 +30,9 @@
 		não é suficientemente claro ou natural. Outros são usados sem nenhuma
 		referência.
 
+                        Versão 1.6 - maio/19 - Acréscimo de Assinatura em formato livre (AssinaturaTexto)
+                                               FormulaPromulgacao, LocalDataFecho, Observacao - deixa de ser texto simples para permitir múltiplos parágrafos 
+                        
                         Versao 1.5 - setembro/11 - novo elemento TituloDispositivo. Sai TituloArtigo.
                                                  - Omissis pode ser filho de agrupadores de artigo em Alteracao.
                                                  - Ajustes no id do Omissis
@@ -583,20 +586,21 @@
 					<xsd:element ref="AssinaturaGrupo" minOccurs="0" maxOccurs="unbounded" />
 					<xsd:element ref="Assinaturas" minOccurs="0" maxOccurs="unbounded"/>
 					<xsd:element ref="Assinatura" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="AssinaturaTexto" minOccurs="0" maxOccurs="1"/>
 				</xsd:choice>
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
 
-    <xsd:element name="FormulaPromulgacao" type="textoSimplesType"/>
+    <xsd:element name="FormulaPromulgacao" type="parsType"/>    	
 
 	<xsd:element name="Epigrafe" type="inlineReq"/>
 
 	<xsd:element name="Ementa" type="inlineReq"/>
 
-	<xsd:element name="LocalDataFecho" type="textoSimplesType"/>
+	<xsd:element name="LocalDataFecho" type="parsType"/>
 
-	<xsd:element name="Observacao" type="textoSimplesType"/>
+	<xsd:element name="Observacao" type="parsType"/>
 
 	<xsd:element name="Preambulo" type="textoType"/>
 
@@ -629,6 +633,8 @@
 		</xsd:complexType>
 	</xsd:element>
 
+	<xsd:element name="AssinaturaTexto" type="parsType"/>
+		
 	<xsd:element name="NomePessoa" type="xsd:string"/>
 
 	<xsd:element name="Cargo" type="xsd:string"/>
@@ -1168,6 +1174,12 @@
                        <xsd:element name="AnulamentoParcial" type="refURNAlvo"/>
                        <xsd:element name="DerrubadaVetoParcial" type="refURNAlvo"/>
 
+
+<xsd:complexType name="parsType">
+        <xsd:sequence>
+            <xsd:element ref="p" minOccurs="1" maxOccurs="unbounded" />
+        </xsd:sequence>        
+    </xsd:complexType>
 
 	<xsd:element name="Notas">
 		<xsd:complexType >
