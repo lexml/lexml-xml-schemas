@@ -17,9 +17,10 @@
         <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(prt|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
         <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
         <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}_(sub|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
+        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_  omi\d+"></xsd:pattern>
+        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
+        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
+        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}_(sub|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
       </xsd:restriction>
     </xsd:simpleType>
     <xsd:complexType name="DispositivoType">
@@ -48,6 +49,7 @@
             <xsd:element name="Parte" type="ParteEmAlteracaoType" />
             <xsd:element name="Livro" type="LivroEmAlteracaoType" />
             <xsd:element name="Titulo" type="TituloEmAlteracaoType" />
+            <xsd:element name="Subtitulo" type="SubtituloEmAlteracaoType" />
             <xsd:element name="Capitulo" type="CapituloEmAlteracaoType" />
             <xsd:element name="Secao" type="SecaoEmAlteracaoType" />
             <xsd:element name="Subsecao" type="SubsecaoEmAlteracaoType" />
@@ -70,9 +72,10 @@
       <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?(prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
       <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
       <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?(((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
-      <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?((((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(cap|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
-      <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?(((((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(cap|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(sec|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
-      <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?(((((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(cap|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(sec|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_(sub|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
+      <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?((((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(stt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
+      <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?(((((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(stt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(cap|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
+      <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?((((((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(stt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(cap|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(sec|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
+      <xsd:pattern value="(art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_)?((((((prt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(liv|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(tit|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(stt|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(cap|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_)?(sec|agh)(\d+(-[0-9]{1,3}){0,3}|1u)_(sub|agh)(\d+(-[0-9]{1,3}){0,3}|1u)"></xsd:pattern>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:annotation>
@@ -163,6 +166,7 @@
           <xsd:sequence>
             <xsd:element ref="Artigo" minOccurs="0" maxOccurs="unbounded" />
             <xsd:element ref="Capitulo" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element ref="Subtitulo" minOccurs="0" maxOccurs="unbounded" />
           </xsd:sequence>
         </xsd:extension>
       </xsd:complexContent>
@@ -180,10 +184,46 @@
             <xsd:element name="Capitulo" type="CapituloEmAlteracaoType"/>
             <xsd:element ref="Omissis" minOccurs="0"/>
           </xsd:sequence>
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="Subtitulo" type="SubtituloEmAlteracaoType"/>
+            <xsd:element ref="Omissis" minOccurs="0"/>
+          </xsd:sequence>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
+  
+  <xsd:element name="Subtitulo" substitutionGroup="_Subtitulo">
+    <xsd:complexType>
+      <xsd:complexContent>
+        <xsd:extension base="hierarchy">
+          <xsd:sequence>
+            <xsd:element ref="Artigo" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element ref="Capitulo" minOccurs="0" maxOccurs="unbounded" />
+          </xsd:sequence>
+        </xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="SubtituloEmAlteracaoType">
+    <xsd:complexContent>
+      <xsd:extension base="hierarchyEmAlteracaoType">
+        <xsd:sequence>
+          <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="Artigo" type="ArtigoEmAlteracaoType" />
+            <xsd:element ref="Omissis" />
+          </xsd:choice>
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="Capitulo" type="CapituloEmAlteracaoType"/>
+            <xsd:element ref="Omissis" minOccurs="0"/>
+          </xsd:sequence>          
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  
+  
   <xsd:element name="Capitulo" substitutionGroup="_Capitulo">
     <xsd:complexType>
       <xsd:complexContent>

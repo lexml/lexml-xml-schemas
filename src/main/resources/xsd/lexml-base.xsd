@@ -29,6 +29,7 @@
 		Alguns deles são mencionados explicitamente, quando o seu uso
 		não é suficientemente claro ou natural. Outros são usados sem nenhuma
 		referência.
+					    Versão 1.7 - maio/20 - Acréscimo de Subtítulo
 
                         Versão 1.6 - maio/19 - Acréscimo de Assinatura em formato livre (AssinaturaTexto)
                                                FormulaPromulgacao, LocalDataFecho, Observacao - deixa de ser texto simples para permitir múltiplos parágrafos 
@@ -102,6 +103,7 @@
 			<xsd:element ref="_Parte"/>
 			<xsd:element ref="_Livro"/>
 			<xsd:element ref="_Titulo"/>
+			<xsd:element ref="_Subtitulo"/>
 			<xsd:element ref="_Capitulo"/>
 			<xsd:element ref="_Secao"/>
 			<xsd:element ref="_Artigo"/>
@@ -1234,6 +1236,7 @@
     <xsd:element name="_Parte" abstract="true"/>
     <xsd:element name="_Livro" abstract="true"/>
     <xsd:element name="_Titulo" abstract="true"/>
+    <xsd:element name="_Subtitulo" abstract="true"/>
     <xsd:element name="_Capitulo" abstract="true"/>
     <xsd:element name="_Secao" abstract="true"/>
     <xsd:element name="_Subsecao" abstract="true"/>
