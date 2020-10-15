@@ -5,7 +5,7 @@
 	<groupId>br.gov.lexml</groupId>
 	<artifactId>lexml-xml-schemas</artifactId>
 	<packaging>jar</packaging>
-	<version>3.1.14-SNAPSHOT</version>
+	<version>3.1.14</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,7 +18,7 @@
 		<url>https://github.com/lexml/${project.artifactId}</url>
 		<connection>scm:git:https://github.com/lexml/${project.artifactId}.git</connection>
 		<developerConnection>scm:git:https://github.com/lexml/${project.artifactId}.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>3.1.14</tag>
 	</scm>
 	
 	<distributionManagement>
