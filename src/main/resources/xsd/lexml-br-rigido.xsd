@@ -13,14 +13,7 @@
     </xsd:simpleType>
     <xsd:simpleType name="idOmissis">
       <xsd:restriction base="idOmissis">
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+(_art(\d+(-[0-9]{1,3}){0,3}|1u)((_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_(inc|dpg)\d+(-[0-9]{1,3}){0,3}(_(ali|dpg)\d+(-[0-9]{1,3}){0,3}(_(ite|dpg)\d+(-[0-9]{1,3}){0,3})?)?)?)?)?_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(prt|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_  omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_(((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+_((((((prt|agh)\d+(-[0-9]{1,3}){0,3}_)?(liv|agh)\d+(-[0-9]{1,3}){0,3}_)?(tit|agh)\d+(-[0-9]{1,3}){0,3}_)?(stt|agh)\d+(-[0-9]{1,3}){0,3}_)?(cap|agh)\d+(-[0-9]{1,3}){0,3}_)?(sec|agh)\d+(-[0-9]{1,3}){0,3}_(sub|agh)\d+(-[0-9]{1,3}){0,3}_omi\d+"></xsd:pattern>
+        <xsd:pattern value="art(\d+(-\d{1,3}){0,3}|1u)_cpt|(par|dpg)(\d+(-\d{1,3}){0,3}|1u)(_(inc|dpg)\d+(-\d{1,3}){0,3})?_alt\d+((_(inc|dpg)\d+(-\d{1,3}){0,3}(_(ali|dpg)\d+(-\d{1,3}){0,3}(_(ite|dpg)\d+(-\d{1,3}){0,3})?)?)|((_(prt|agh)\d+(-\d{1,3}){0,3})?(_(liv|agh)\d+(-\d{1,3}){0,3})?(_(tit|agh)\d+(-\d{1,3}){0,3}(_(stt|agh)\d+(-\d{1,3}){0,3})?)?(_(cap|agh)\d+(-\d{1,3}){0,3})?(_(sec|agh)\d+(-\d{1,3}){0,3}(_(sub|agh)\d+(-\d{1,3}){0,3})?)?))?_omi\d+"></xsd:pattern>
       </xsd:restriction>
     </xsd:simpleType>
     <xsd:complexType name="DispositivoType">
