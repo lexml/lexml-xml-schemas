@@ -733,6 +733,7 @@
 			<xsd:complexContent>
 				<xsd:extension base="DispositivoType">
 					<xsd:attributeGroup ref="nome"/>
+					<xsd:attributeGroup ref="attrsCitacao"/>
 				</xsd:extension>
 			</xsd:complexContent>
 		</xsd:complexType>
