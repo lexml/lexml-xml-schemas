@@ -8,7 +8,7 @@
       </xsd:annotation>
       <xsd:restriction base="idArtigo">
         <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)((_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_(inc|dpg)\d+(-[0-9]{1,3}){0,3}(_(ali|dpg)\d+(-[0-9]{1,3}){0,3}(_(ite|dpg)\d+(-[0-9]{1,3}){0,3})?)?)?)?"></xsd:pattern>
-        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+(_art(\d+(-[0-9]{1,3}){0,3}|1u)((_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_(inc|dpg)\d+(-[0-9]{1,3}){0,3})?(_(ali|dpg)\d+(-[0-9]{1,3}){0,3}(_(ite|dpg)\d+(-[0-9]{1,3}){0,3})?)?)?)?"></xsd:pattern>
+        <xsd:pattern value="art(\d+(-[0-9]{1,3}){0,3}|1u)(_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_inc\d+(-[0-9]{1,3}){0,3})?_alt\d+(_art(\d+(-[0-9]{1,3}){0,3}|1u)((_cpt|(_(par|dpg)(\d+(-[0-9]{1,3}){0,3}|1u)))(_(inc|dpg)\d+(-[0-9]{1,3}){0,3})?(_(ali|dpg)\d+(-[0-9]{1,3}){0,3})?(_(ite|dpg)\d+(-[0-9]{1,3}){0,3})?)?)?"></xsd:pattern>
       </xsd:restriction>
     </xsd:simpleType>
     <xsd:simpleType name="idOmissis">
