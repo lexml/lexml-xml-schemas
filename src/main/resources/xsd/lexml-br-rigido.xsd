@@ -373,6 +373,7 @@
         <xsd:sequence>
           <xsd:choice minOccurs="0" maxOccurs="unbounded">
             <xsd:element name="Alinea" type="AlineaEmAlteracaoType" />
+            <xsd:element name="Item" type="ItemEmAlteracaoType" />
             <xsd:element ref="Omissis" />
           </xsd:choice>
           <xsd:element name="Pena" type="PenaEmAlteracaoType" minOccurs="0" maxOccurs="1" />
