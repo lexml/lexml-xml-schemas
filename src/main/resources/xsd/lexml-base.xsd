@@ -28,7 +28,10 @@
 		descrito em  http://www.xmlpatterns.com/
 		Alguns deles são mencionados explicitamente, quando o seu uso
 		não é suficientemente claro ou natural. Outros são usados sem nenhuma
-		referência.
+			referência.
+
+			Versão 1.8 - Abril/22 - Acréscimo de suporte de AssinaturaTexto em elementos AssinaturaGrupo, ajuste de
+			                        cardinalidade dos elementos Assinatura em AssinaturaGrup e Assinaturas.
 					    Versão 1.7 - maio/20 - Acréscimo de Subtítulo
 
                         Versão 1.6 - maio/19 - Acréscimo de Assinatura em formato livre (AssinaturaTexto)
@@ -587,7 +590,7 @@
 				<xsd:choice>
 					<xsd:element ref="AssinaturaGrupo" minOccurs="0" maxOccurs="unbounded" />
 					<xsd:element ref="Assinaturas" minOccurs="0" maxOccurs="unbounded"/>
-					<xsd:element ref="Assinatura" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="Assinatura" minOccurs="0" maxOccurs="1"/>
 					<xsd:element ref="AssinaturaTexto" minOccurs="0" maxOccurs="1"/>
 				</xsd:choice>
 			</xsd:sequence>
@@ -612,7 +615,8 @@
 				<xsd:element name="NomeGrupo" type="xsd:string" minOccurs="0" maxOccurs="1"/>
 				<xsd:choice>
 					<xsd:element ref="Assinaturas" minOccurs="0" maxOccurs="unbounded"/>
-					<xsd:element ref="Assinatura" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="Assinatura" minOccurs="0" maxOccurs="1"/>
+					<xsd:element ref="AssinaturaTexto" minOccurs="0" maxOccurs="1"/>
 				</xsd:choice>
 			</xsd:sequence>
 		</xsd:complexType>
