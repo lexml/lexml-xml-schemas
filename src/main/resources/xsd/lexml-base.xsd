@@ -6,8 +6,8 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
-    <xsd:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/Math/XMLSchema/mathml2/common/xlink-href.xsd" />
-    <xsd:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd"/>
+    <xsd:import namespace="http://www.w3.org/1999/xlink" schemaLocation="https://www.w3.org/Math/XMLSchema/mathml2/common/xlink-href.xsd" />
+    <xsd:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="https://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd"/>
 
 	<xsd:annotation>
 		<xsd:documentation>
@@ -30,6 +30,8 @@
 		não é suficientemente claro ou natural. Outros são usados sem nenhuma
 			referência.
 
+			Versão 4.0.0 - Agosto/22 - Remoção de elemento Assinaturas. Simplificação de "choices" em ParteFinal e em
+									 AssinaturaGrupo
 			Versão 1.8 - Abril/22 - Acréscimo de suporte de AssinaturaTexto em elementos AssinaturaGrupo, ajuste de
 			                        cardinalidade dos elementos Assinatura em AssinaturaGrup e Assinaturas.
 					    Versão 1.7 - maio/20 - Acréscimo de Subtítulo
@@ -587,15 +589,16 @@
 		<xsd:complexType >
 			<xsd:sequence>
 				<xsd:element ref="LocalDataFecho" minOccurs="0" maxOccurs="1" />
-				<xsd:choice>
-					<xsd:element ref="AssinaturaGrupo" minOccurs="0" maxOccurs="unbounded" />
-					<xsd:element ref="Assinaturas" minOccurs="0" maxOccurs="unbounded"/>
-					<xsd:element ref="Assinatura" minOccurs="0" maxOccurs="1"/>
-					<xsd:element ref="AssinaturaTexto" minOccurs="0" maxOccurs="1"/>
+				<xsd:choice name="ParteFinalAssinatura" minOccurs="0" maxOccurs="unbounded">
+					<xsd:element ref="AssinaturaGrupo"/>
+					<xsd:element ref="Assinatura"/>
+					<xsd:element ref="AssinaturaTexto"/>
 				</xsd:choice>
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
+
+
 
     <xsd:element name="FormulaPromulgacao" type="parsType"/>    	
 
@@ -613,19 +616,10 @@
 		<xsd:complexType >
 			<xsd:sequence>
 				<xsd:element name="NomeGrupo" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-				<xsd:choice>
-					<xsd:element ref="Assinaturas" minOccurs="0" maxOccurs="unbounded"/>
-					<xsd:element ref="Assinatura" minOccurs="0" maxOccurs="1"/>
-					<xsd:element ref="AssinaturaTexto" minOccurs="0" maxOccurs="1"/>
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+					<xsd:element ref="Assinatura"/>
+					<xsd:element ref="AssinaturaTexto"/>
 				</xsd:choice>
-			</xsd:sequence>
-		</xsd:complexType>
-	</xsd:element>
-
-	<xsd:element name="Assinaturas">
-		<xsd:complexType >
-			<xsd:sequence >
-				<xsd:element ref="Assinatura" minOccurs="1" maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
@@ -1103,7 +1097,8 @@
 				                <xsd:element ref="AnulamentoTotal"/>
 				                <xsd:element ref="AlteracaoFragmento"/>
 				                <!-- AlteraçãoFragmento inclui modificação (Substituicao Textual), Revogacao Parcial,
-				                      Anulamento Parcial e Derrubada de Veto Parcial-->
+				                      Anulamento Parcial e Derrubada de Veto Parcial
+-->
 				          </xsd:choice>
 				<xsd:attributeGroup ref="date"/>
 				</xsd:extension>
