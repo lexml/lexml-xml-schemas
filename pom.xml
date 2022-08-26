@@ -5,7 +5,7 @@
 	<groupId>br.gov.lexml</groupId>
 	<artifactId>lexml-xml-schemas</artifactId>
 	<packaging>jar</packaging>
-	<version>4.0.1-SNAPSHOT</version>
+	<version>4.0.1</version>
 	<name>LexML Brazil XML Schemas</name>
 	<description>XML schemas for the LexML Brazil document format.</description>
 	<url>https://github.com/lexml/lexml-xml-schemas</url>
@@ -45,7 +45,7 @@
 		<url>https://github.com/lexml/lexml-xml-schemas</url>
 		<connection>scm:git:https://github.com/lexml/lexml-xml-schemas.git</connection>
 		<developerConnection>scm:git:https://github.com/lexml/lexml-xml-schemas.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>lexml-xml-schemas-4.0.1</tag>
 	</scm>
 	
 	<build>
