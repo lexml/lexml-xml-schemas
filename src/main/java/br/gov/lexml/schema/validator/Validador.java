@@ -93,7 +93,7 @@ public class Validador {
 	}
 
 	private static InputStream getResourceAsStream(String resource) {
-		logger.info("Validador.getResourceAsStream: resorce = {}", resource);
+		logger.info("Validador.getResourceAsStream: resource = {}", resource);
 		ClassLoader cl = Validador.class.getClassLoader();
 		if(cl instanceof URLClassLoader) {
 			URLClassLoader ucl = (URLClassLoader) cl;
@@ -221,8 +221,7 @@ public class Validador {
                                            String baseURI) {
             final String res;
             if (baseURI != null
-                && baseURI
-                      .equals("http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd")) {
+                && baseURI.endsWith("//www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd")) {
                 res = "mathml2/" + systemId;
             } else if (systemId != null && systemId.contains("mathml2")) {
                 res = systemId.replaceFirst("^.*mathml2/", "mathml2/");

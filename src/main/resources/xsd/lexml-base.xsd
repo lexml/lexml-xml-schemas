@@ -589,7 +589,7 @@
 		<xsd:complexType >
 			<xsd:sequence>
 				<xsd:element ref="LocalDataFecho" minOccurs="0" maxOccurs="1" />
-				<xsd:choice name="ParteFinalAssinatura" minOccurs="0" maxOccurs="unbounded">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
 					<xsd:element ref="AssinaturaGrupo"/>
 					<xsd:element ref="Assinatura"/>
 					<xsd:element ref="AssinaturaTexto"/>
