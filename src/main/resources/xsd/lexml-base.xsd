@@ -2,12 +2,14 @@
 
 <xsd:schema xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	elementFormDefault="qualified"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
     <xsd:import namespace="http://www.w3.org/1999/xlink" schemaLocation="https://www.w3.org/Math/XMLSchema/mathml2/common/xlink-href.xsd" />
     <xsd:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="https://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd"/>
+    <xsd:import namespace="http://www.w3.org/2002/07/owl#" schemaLocation="http://www.w3.org/2009/09/owl2-xml.xsd"/>
 
 	<xsd:annotation>
 		<xsd:documentation>
@@ -1055,11 +1057,20 @@
 		    <xsd:element ref="EventosGerados" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="Notas" minOccurs="0" maxOccurs="unbounded" />
 		    <xsd:element ref="Recursos" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="AnotacoesSemanticas" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="MetadadoProprietario" minOccurs="0" maxOccurs="unbounded" />
 		</xsd:sequence>
 	</xsd:complexType>
 
     <xsd:element name="Metadado" type="MetaSection" />
+
+	<xsd:element name="AnotacoesSemanticas">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="owl:Ontology" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
 
 	<xsd:complexType name="IdentificacaoType" >
         <xsd:attribute name="URN" type="xsd:anyURI" use="required"/>
