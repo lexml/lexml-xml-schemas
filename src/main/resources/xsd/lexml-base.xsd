@@ -142,7 +142,8 @@
                ao invés disso, deve-se especificar outro elemento, ex. "AlteracaoInline",
                cujo conteúdo seja também inline. -->
 			<xsd:element ref="Alteracao"/>
-		    <xsd:element ref="Formula"/>
+			<xsd:element ref="Formula"/>
+			<xsd:element ref="NotaDeRodape"/>
 		</xsd:choice>
 	</xsd:group>
 
@@ -882,6 +883,15 @@
 				<xsd:extension base="inline">
 					<xsd:attributeGroup ref="nome"/>
 				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!--  Descobrir como especificar melhor que NotaDeRodape é simplesmente um inline -->
+	<xsd:element name="NotaDeRodape">
+		<xsd:complexType mixed="true">
+			<xsd:complexContent>
+				<xsd:extension base="inline"/>
 			</xsd:complexContent>
 		</xsd:complexType>
 	</xsd:element>
