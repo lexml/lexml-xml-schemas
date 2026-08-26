@@ -457,6 +457,7 @@
 		<xsd:choice>
 			<xsd:any  namespace="##other"/>
 		</xsd:choice>
+		<xsd:attributeGroup ref="idopt"/>
 	</xsd:complexType>
 
 	<xsd:complexType name="participaType" >
@@ -783,7 +784,7 @@
 
 	<xsd:element name="TituloDispositivo" type="inline" />
 
-	<xsd:element name="Rotulo" type="xsd:string" />
+	<xsd:element name="Rotulo" type="stringWithOptionalId" />
 
 	<xsd:element name="NomeAgrupador" type="inline" />
 
@@ -850,6 +851,7 @@
           </xsd:sequence>
           <xsd:attribute name="fonte" type="xsd:string"/>
           <xsd:attribute name="tipo" type="xsd:string"/>
+          <xsd:attributeGroup ref="idopt"/>
        </xsd:complexType>
     </xsd:element>
 
@@ -1024,6 +1026,7 @@
 			<xsd:sequence >
 				<xsd:element ref="li" minOccurs="1" maxOccurs="unbounded" />
 			</xsd:sequence>
+			<xsd:attributeGroup ref="idopt"/>
 		</xsd:complexType>
 	</xsd:element>
 
@@ -1032,6 +1035,7 @@
 			<xsd:sequence >
 				<xsd:element ref="li" minOccurs="1" maxOccurs="unbounded" />
 			</xsd:sequence>
+			<xsd:attributeGroup ref="idopt"/>
 		</xsd:complexType>
 	</xsd:element>
 
@@ -1055,7 +1059,8 @@
 				<xsd:element ref="th" />
 				<xsd:element ref="td" />
 			</xsd:choice>
-				<xsd:attributeGroup ref="HTMLattrs"/>
+			<xsd:attributeGroup ref="HTMLattrs"/>
+			<xsd:attributeGroup ref="idopt"/>
 		</xsd:complexType>
 	</xsd:element>
 
