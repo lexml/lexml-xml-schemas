@@ -176,6 +176,7 @@
 			<xsd:element ref="b"/>
 			<xsd:element ref="i"/>
 			<xsd:element ref="a"/>
+			<xsd:element ref="u"/>
 			<xsd:element ref="sub"/>
 			<xsd:element ref="sup"/>
 			<xsd:element ref="ins"/>
@@ -985,6 +986,8 @@
 	<xsd:element name="b" type="inline" />
 
 	<xsd:element name="i" type="inline" />
+	
+	<xsd:element name="u" type="inline" />
 
 	<xsd:element name="sub" type="inline" />
 
