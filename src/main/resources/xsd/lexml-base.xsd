@@ -182,8 +182,13 @@
 			<xsd:element ref="ins"/>
 			<xsd:element ref="del"/>
 			<xsd:element ref="dfn"/>
+			<xsd:element ref="br"/>
 		</xsd:choice>
 	</xsd:group>
+
+	<xsd:element name="br">
+		<xsd:complexType/>
+	</xsd:element>
 
 	<xsd:group name="HTMLmarker">
 		<xsd:sequence>
